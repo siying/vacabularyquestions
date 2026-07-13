@@ -124,100 +124,97 @@ const vocabularyData = [
 // ==========================================================================
 // SENTENCE CHALLENGE QUESTIONS DATASET
 // ==========================================================================
-// ==========================================================================
-// SENTENCE CHALLENGE QUESTIONS DATASET
-// ==========================================================================
 const sentenceQuestions = [
     {
         sentence: "The <span class='sentence-blank'>_______</span> student sat in the front row, taking notes on everything the teacher said.",
         options: ["timid", "attentive", "meager", "temporary"],
         correctIndex: 1,
         word: "ATTENTIVE",
-        explanation: "An <strong>attentive</strong> student is one who pays close attention and is observant, which fits perfectly with sitting in the front row and taking notes on everything. Luca originally chose 'hardworking' instead of 'observant' for this word's definition."
+        explanation: "An <strong>attentive</strong> student is one who pays close attention and is observant, which fits perfectly with sitting in the front row and taking notes on everything."
     },
     {
         sentence: "Young writers often try to <span class='sentence-blank'>_______</span> the style of their favorite authors until they find their own voice.",
         options: ["provoke", "resemble", "emulate", "contract"],
         correctIndex: 2,
         word: "EMULATE",
-        explanation: "To <strong>emulate</strong> means to copy or imitate someone's style in order to match or excel them. Luca originally confused 'emulate' with 'innovate' (creating something new)."
+        explanation: "To <strong>emulate</strong> means to copy or imitate someone's style in order to match or excel them."
     },
     {
         sentence: "If you tease the dog while it is eating, you might <span class='sentence-blank'>_______</span> it to bite.",
         options: ["provoke", "emulate", "resemble", "contract"],
         correctIndex: 0,
         word: "PROVOKE",
-        explanation: "To <strong>provoke</strong> means to stir up, anger, or instigate a reaction. Teasing a dog can provoke it to bite. Luca originally confused 'provoke' with 'scold' (reprimanding)."
+        explanation: "To <strong>provoke</strong> means to stir up, anger, or instigate a reaction. Teasing a dog can provoke it to bite."
     },
     {
         sentence: "After weeks of drought, the farmers had only a <span class='sentence-blank'>_______</span> harvest of vegetables.",
         options: ["astonishing", "practical", "attentive", "meager"],
         correctIndex: 3,
         word: "MEAGER",
-        explanation: "A <strong>meager</strong> harvest means one that is very small, thin, or limited in amount, which directly results from a drought. Luca originally confused 'meager' with 'enthusiastic'."
+        explanation: "A <strong>meager</strong> harvest means one that is very small, thin, or limited in amount, which directly results from a drought."
     },
     {
         sentence: "Before starting the construction project, the builder signed a legally binding <span class='sentence-blank'>_______</span> with the homeowner.",
         options: ["gratitude", "contract", "provoke", "emulate"],
         correctIndex: 1,
         word: "CONTRACT",
-        explanation: "A <strong>contract</strong> is a formal, legally binding agreement between parties. Luca originally struggled/skipped this question on the test."
+        explanation: "A <strong>contract</strong> is a formal, legally binding agreement between parties."
     },
     {
-        sentence: "The benefit to having a laptop computer over a desktop is that it is <span class='sentence-blank'>_______</span> and can be taken with you anywhere.",
+        sentence: "The compact camping stove is designed to be <span class='sentence-blank'>_______</span>, allowing hikers to easily pack it in their bags.",
         options: ["portable", "temporary", "practical", "meager"],
         correctIndex: 0,
         word: "PORTABLE",
-        explanation: "Since the laptop <strong>'can be taken with you anywhere'</strong>, it is <strong>portable</strong> (easy to move or carry). Luca originally selected 'efficient', which describes speed/wasted effort, not mobility."
+        explanation: "A compact stove that fits easily in a bag is easy to carry, which is the definition of <strong>portable</strong>."
     },
     {
-        sentence: "Chris <span class='sentence-blank'>_______</span> his Uncle Tom so much that people often mistook Chris for Tom's son.",
-        options: ["emulated", "provoked", "resembled", "contracted"],
+        sentence: "Although they are not related, the two puppies <span class='sentence-blank'>_______</span> each other so much that it is hard to tell them apart.",
+        options: ["emulate", "provoke", "resemble", "contract"],
         correctIndex: 2,
         word: "RESEMBLE",
-        explanation: "If people mistake Chris for Tom's son, it's because they look alike (<strong>resembled</strong>). Luca originally selected 'loved', but loving someone does not make you look like them!"
+        explanation: "To <strong>resemble</strong> means to look like or share a similar appearance with something else."
     },
     {
-        sentence: "The teacher grew more and more <span class='sentence-blank'>_______</span> as the student continued to tap his pen against the desk, despite being asked numerous times to stop.",
+        sentence: "The driver became <span class='sentence-blank'>_______</span> when he got stuck in bumper-to-bumper traffic for over an hour.",
         options: ["timid", "astonishing", "irritated", "attentive"],
         correctIndex: 2,
         word: "IRRITATED",
-        explanation: "Repeated pen-tapping after being asked to stop causes annoyance (<strong>irritated</strong>). Luca originally selected 'violent', which involves physical force and is far too extreme."
+        explanation: "Getting stuck in traffic for an hour causes annoyance and impatience (<strong>irritated</strong>)."
     },
     {
         sentence: "The gymnast put on an <span class='sentence-blank'>_______</span> performance, landing three backflips in a row to win the gold medal.",
         options: ["astonishing", "meager", "temporary", "timid"],
         correctIndex: 0,
         word: "ASTONISHING",
-        explanation: "Landing three backflips in a row to win gold is an extremely surprising, impressive, or <strong>astonishing</strong> feat. Luca originally confused this with 'exciting'."
+        explanation: "Landing three backflips in a row to win gold is an extremely surprising, impressive, or <strong>astonishing</strong> feat."
     },
     {
         sentence: "To express their <span class='sentence-blank'>_______</span>, the family sent a thank-you note and flowers to the doctor.",
         options: ["contract", "provoke", "resemble", "gratitude"],
         correctIndex: 3,
         word: "GRATITUDE",
-        explanation: "Sending a thank-you note and flowers is a classic way to express thankfulness (<strong>gratitude</strong>). Luca originally confused this with 'luck'."
+        explanation: "Sending a thank-you note and flowers is a classic way to express thankfulness (<strong>gratitude</strong>)."
     },
     {
         sentence: "The <span class='sentence-blank'>_______</span> kitten hesitated to leave the safety of its box to explore the new room.",
         options: ["attentive", "timid", "irritated", "practical"],
         correctIndex: 1,
         word: "TIMID",
-        explanation: "A kitten that is fearful and hesitates to leave its box is being shy or <strong>timid</strong>. Luca originally confused this with 'nerdy' or 'talkative'."
+        explanation: "A kitten that is fearful and hesitates to leave its box is being shy or <strong>timid</strong>."
     },
     {
-        sentence: "Although Cassandra was not excited about getting braces, she took comfort in knowing that they were <span class='sentence-blank'>_______</span> and would be off by the time she graduated.",
+        sentence: "The artist used wash-off chalk to create a <span class='sentence-blank'>_______</span> mural on the sidewalk that would disappear with the next rain.",
         options: ["portable", "meager", "practical", "temporary"],
         correctIndex: 3,
         word: "TEMPORARY",
-        explanation: "The fact that the braces <strong>'would be off by the time she graduated'</strong> means they will not last forever, making them <strong>temporary</strong> (not permanent). Luca originally struggled, selecting 'fashionable', 'mandatory', and 'painless' before choosing correctly."
+        explanation: "A chalk mural that washes away with rain is not permanent, it is <strong>temporary</strong>."
     },
     {
-        sentence: "Though his suggested solution to the company's dilemma was <span class='sentence-blank'>_______</span>, it was far too expensive and would take too long to implement.",
+        sentence: "When packing for a long backpacking trip, it is most <span class='sentence-blank'>_______</span> to bring only lightweight, multi-use items.",
         options: ["practical", "temporary", "attentive", "portable"],
         correctIndex: 0,
         word: "PRACTICAL",
-        explanation: "The contrast word <strong>'Though'</strong> indicates the solution was sensible and realistic (<strong>practical</strong>), but couldn't be done due to high cost and time. Luca originally wrote in his own 'E' choice instead of picking 'A'!"
+        explanation: "Packing lightweight, multi-use items is sensible and useful (<strong>practical</strong>) for a long hike."
     }
 ];
 
