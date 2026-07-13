@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca's Vocabulary Mastery</title>
+    <meta name="description" content="An interactive web application designed to help Luca master challenging vocabulary words from his practice tests.">
+    <!-- Google Fonts: Outfit and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow bg-glow-1"></div>
+    <div class="background-glow bg-glow-2"></div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">🚀</span>
+                <h1>VocabMaster <span class="accent-text">Luca</span></h1>
+            </div>
+            <nav class="tab-nav">
+                <button class="nav-btn active" id="tab-btn-study" data-tab="study" onclick="switchTab('study')">
+                    <span class="nav-icon">📖</span> Study Deck
+                </button>
+                <button class="nav-btn" id="tab-btn-quiz" data-tab="quiz" onclick="switchTab('quiz')">
+                    <span class="nav-icon">✏️</span> Definitions Quiz
+                </button>
+                <button class="nav-btn" id="tab-btn-sentences" data-tab="sentences" onclick="switchTab('sentences')">
+                    <span class="nav-icon">🧩</span> Context Challenge
+                </button>
+            </nav>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Study Tab -->
+            <section id="tab-study" class="tab-content active">
+                <div class="section-header">
+                    <h2>Study Deck</h2>
+                    <p>Review the definitions, synonyms, and example sentences for the words you missed or struggled with.</p>
+                </div>
+                <div class="deck-controls">
+                    <button class="control-btn active" id="filter-all" onclick="filterStudyDeck('all')">All Words (13)</button>
+                    <button class="control-btn" id="filter-errors" onclick="filterStudyDeck('errors')">Flat-Out Errors (8)</button>
+                    <button class="control-btn" id="filter-struggles" onclick="filterStudyDeck('struggles')">Struggled/Corrected (5)</button>
+                </div>
+                <div class="words-grid" id="words-grid">
+                    <!-- Cards will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Quiz Tab -->
+            <section id="tab-quiz" class="tab-content">
+                <div class="section-header">
+                    <h2>Definitions Quiz</h2>
+                    <p>Test your memory of definitions! Toggle mode to match word to definition, or definition to word.</p>
+                </div>
+                <div class="quiz-setup-card">
+                    <div class="quiz-mode-selector">
+                        <span class="mode-label">Quiz Mode:</span>
+                        <div class="toggle-container">
+                            <button class="toggle-btn active" id="mode-word-to-def" onclick="setQuizMode('word-to-def')">Word ➔ Definition</button>
+                            <button class="toggle-btn" id="mode-def-to-word" onclick="setQuizMode('def-to-word')">Definition ➔ Word</button>
+                        </div>
+                    </div>
+                    <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+                </div>
+
+                <div class="quiz-container hidden" id="quiz-game">
+                    <div class="quiz-progress-bar-container">
+                        <div class="quiz-progress-bar" id="quiz-progress"></div>
+                    </div>
+                    <div class="quiz-header-info">
+                        <span id="quiz-question-number">Question 1 of 10</span>
+                        <span class="score-pill">Score: <span id="quiz-current-score">0</span></span>
+                    </div>
+                    <div class="quiz-card">
+                        <h3 class="quiz-question" id="quiz-question-text">Question Text</h3>
+                        <div class="quiz-options" id="quiz-options-container">
+                            <!-- Options will be dynamically inserted here -->
+                        </div>
+                        <div class="feedback-area hidden" id="quiz-feedback">
+                            <p class="feedback-text" id="quiz-feedback-text">Correct!</p>
+                            <button class="next-btn" id="quiz-next-btn" onclick="nextQuizQuestion()">Next Question ➔</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-results hidden" id="quiz-results-card">
+                    <div class="result-icon">🏆</div>
+                    <h3>Quiz Complete!</h3>
+                    <p class="result-score-text">You scored <span id="result-score" class="accent-text">8/10</span> (<span id="result-percent">80%</span>)</p>
+                    <div class="result-summary" id="result-summary-list">
+                        <!-- Summary list of correct/incorrect questions -->
+                    </div>
+                    <button class="restart-btn" onclick="resetQuizSetup()">Try Again</button>
+                </div>
+            </section>
+
+            <!-- Sentences Tab -->
+            <section id="tab-sentences" class="tab-content">
+                <div class="section-header">
+                    <h2>Context Challenge</h2>
+                    <p>Test your understanding of these words in full sentences. These include the exact scenarios from your test where mistakes were made.</p>
+                </div>
+
+                <div class="sentence-container" id="sentence-game">
+                    <div class="quiz-progress-bar-container">
+                        <div class="quiz-progress-bar" id="sentence-progress"></div>
+                    </div>
+                    <div class="quiz-header-info">
+                        <span id="sentence-question-number">Question 1 of 8</span>
+                        <span class="score-pill">Score: <span id="sentence-current-score">0</span></span>
+                    </div>
+                    <div class="quiz-card">
+                        <p class="sentence-text" id="sentence-text-display">Sentence goes here...</p>
+                        <div class="quiz-options" id="sentence-options-container">
+                            <!-- Options will be dynamically inserted here -->
+                        </div>
+                        <div class="feedback-area hidden" id="sentence-feedback">
+                            <div class="explanation-box">
+                                <h4 id="sentence-feedback-status">Correct!</h4>
+                                <p id="sentence-explanation-text">Explanation goes here...</p>
+                            </div>
+                            <button class="next-btn" id="sentence-next-btn" onclick="nextSentenceQuestion()">Next Question ➔</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-results hidden" id="sentence-results-card">
+                    <div class="result-icon">⭐</div>
+                    <h3>Sentence Challenge Complete!</h3>
+                    <p class="result-score-text">You scored <span id="sentence-result-score" class="accent-text">6/8</span> (<span id="sentence-result-percent">75%</span>)</p>
+                    <div class="result-summary" id="sentence-result-summary-list">
+                        <!-- Summary list of correct/incorrect questions -->
+                    </div>
+                    <button class="restart-btn" onclick="resetSentenceChallenge()">Try Again</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>Made for Luca's Vocabulary Practice &bull; Powered by Antigravity</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
