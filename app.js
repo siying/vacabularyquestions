@@ -124,127 +124,100 @@ const vocabularyData = [
 // ==========================================================================
 // SENTENCE CHALLENGE QUESTIONS DATASET
 // ==========================================================================
+// ==========================================================================
+// SENTENCE CHALLENGE QUESTIONS DATASET
+// ==========================================================================
 const sentenceQuestions = [
     {
-        sentence: "Though the weather forecasted <span class='sentence-blank'>_______</span> rain for the entire week, the sky remained sunny through Friday.",
-        options: ["continuous", "minimal", "terrifying", "unexpected"],
-        correctIndex: 0,
-        word: "CONTINUOUS",
-        explanation: "The word <strong>'Though'</strong> indicates a contrast. If the sky remained sunny, the forecast must have predicted a lot of rain. <strong>'Continuous'</strong> (uninterrupted/constant) provides the perfect contrast to a sunny week."
-    },
-    {
-        sentence: "The teacher grew more and more <span class='sentence-blank'>_______</span> as the student continued to tap his pen against the desk, despite being asked numerous times to stop.",
-        options: ["amused", "worried", "irritated", "violent"],
-        correctIndex: 2,
-        word: "IRRITATED",
-        explanation: "Repeatedly tapping a pen after being asked to stop causes annoyance. <strong>'Irritated'</strong> means annoyed. <strong>'Violent'</strong> (physical force/aggression) is far too extreme for a classroom pen-tapping scenario."
-    },
-    {
-        sentence: "Although once widespread, the population of wild tigers has been drastically <span class='sentence-blank'>_______</span> by poachers who profit from hunting tigers and selling their pelts.",
-        options: ["increased", "threatened", "interrupted", "manipulated"],
+        sentence: "The <span class='sentence-blank'>_______</span> student sat in the front row, taking notes on everything the teacher said.",
+        options: ["timid", "attentive", "meager", "temporary"],
         correctIndex: 1,
-        word: "THREATENED",
-        explanation: "Poachers hunting wild animals put their population in danger of dying out. <strong>'Threatened'</strong> means endangered. Hunting doesn't 'increase' them, and 'interrupted' or 'manipulated' doesn't fit the context of hunting wild animals."
+        word: "ATTENTIVE",
+        explanation: "An <strong>attentive</strong> student is one who pays close attention and is observant, which fits perfectly with sitting in the front row and taking notes on everything. Luca originally chose 'hardworking' instead of 'observant' for this word's definition."
     },
     {
-        sentence: "Although the price of a plane ticket had gone up by $300 because Anna waited so long, she still decided to <span class='sentence-blank'>_______</span>.",
-        options: [
-            "drive home instead of fly",
-            "ask her brother if he was planning on flying home",
-            "change her travel plans to a later date",
-            "purchase a ticket to visit her family"
-        ],
-        correctIndex: 3,
-        word: "PURCHASE A TICKET",
-        explanation: "The phrase <strong>'still decided to'</strong> indicates she took the action *in spite of* the negative factor (the $300 price increase). Thus, she bought the ticket anyway."
-    },
-    {
-        sentence: "Since Chris is extremely dedicated to his Christian religion, he <span class='sentence-blank'>_______</span>.",
-        options: [
-            "has many friends who are Jewish",
-            "often forgets to pray before bed",
-            "goes to church at least twice a week",
-            "invited his friends to church"
-        ],
+        sentence: "Young writers often try to <span class='sentence-blank'>_______</span> the style of their favorite authors until they find their own voice.",
+        options: ["provoke", "resemble", "emulate", "contract"],
         correctIndex: 2,
-        word: "GOES TO CHURCH",
-        explanation: "The word <strong>'Since'</strong> indicates cause and effect. A highly dedicated religious person would naturally participate in regular religious practices, such as going to church frequently."
+        word: "EMULATE",
+        explanation: "To <strong>emulate</strong> means to copy or imitate someone's style in order to match or excel them. Luca originally confused 'emulate' with 'innovate' (creating something new)."
     },
     {
-        sentence: "Vincent Van Gogh and Pablo Picasso were both incredibly talented artists, but while Picasso earned millions of dollars throughout his lifetime, Van Gogh <span class='sentence-blank'>_______</span>.",
-        options: [
-            "was known for his impressionist paintings",
-            "lived most of his life in poverty",
-            "sold his paintings for thousands of dollars",
-            "died almost 100 years before Picasso"
-        ],
+        sentence: "If you tease the dog while it is eating, you might <span class='sentence-blank'>_______</span> it to bite.",
+        options: ["provoke", "emulate", "resemble", "contract"],
+        correctIndex: 0,
+        word: "PROVOKE",
+        explanation: "To <strong>provoke</strong> means to stir up, anger, or instigate a reaction. Teasing a dog can provoke it to bite. Luca originally confused 'provoke' with 'scold' (reprimanding)."
+    },
+    {
+        sentence: "After weeks of drought, the farmers had only a <span class='sentence-blank'>_______</span> harvest of vegetables.",
+        options: ["astonishing", "practical", "attentive", "meager"],
+        correctIndex: 3,
+        word: "MEAGER",
+        explanation: "A <strong>meager</strong> harvest means one that is very small, thin, or limited in amount, which directly results from a drought. Luca originally confused 'meager' with 'enthusiastic'."
+    },
+    {
+        sentence: "Before starting the construction project, the builder signed a legally binding <span class='sentence-blank'>_______</span> with the homeowner.",
+        options: ["gratitude", "contract", "provoke", "emulate"],
         correctIndex: 1,
-        word: "LIVED IN POVERTY",
-        explanation: "The word <strong>'but'</strong> contrasts Picasso's massive earnings ('earned millions') with Van Gogh's lack of money. <strong>'Lived most of his life in poverty'</strong> is the direct opposite of earning millions."
-    },
-    {
-        sentence: "Most players on Zoe's soccer team started playing at a young age, but Zoe <span class='sentence-blank'>_______</span>.",
-        options: [
-            "started playing basketball at age 15",
-            "was more talented than most of her teammates",
-            "plays both offense and goalie",
-            "just started playing soccer this year"
-        ],
-        correctIndex: 3,
-        word: "JUST STARTED",
-        explanation: "The word <strong>'but'</strong> sets up a contrast. If most players started at a <strong>young age</strong> (long ago), the contrast is that Zoe started <strong>very recently</strong> ('just started this year')."
-    },
-    {
-        sentence: "Because Alison had forgotten to close her bedroom window, <span class='sentence-blank'>_______</span>.",
-        options: [
-            "her desk got wet during the storm",
-            "her mom left the door open",
-            "her cat was hiding in the closet",
-            "her brother couldn't sleep that night"
-        ],
-        correctIndex: 0,
-        word: "DESK GOT WET",
-        explanation: "The word <strong>'Because'</strong> establishes cause and effect. Leaving a window open during a storm causes rain to fly inside, getting the nearby desk wet."
-    },
-    {
-        sentence: "Thinking her physics exam would be easy, Tonya <span class='sentence-blank'>_______</span>.",
-        options: [
-            "didn't spend any time studying",
-            "cheated during the test",
-            "accidentally slept through the exam",
-            "asked her friends to form a study group"
-        ],
-        correctIndex: 0,
-        word: "STUDY TIME",
-        explanation: "If someone believes a test will be extremely easy, they think they don't need preparation. Therefore, they <strong>do not spend time studying</strong>."
-    },
-    {
-        sentence: "Although Cassandra was not excited about getting braces, she took comfort in knowing that they were <span class='sentence-blank'>_______</span> and would be off by the time she graduated.",
-        options: ["fashionable", "mandatory", "painless", "temporary"],
-        correctIndex: 3,
-        word: "TEMPORARY",
-        explanation: "The fact that the braces <strong>'would be off by the time she graduated'</strong> means they will not be there forever. <strong>'Temporary'</strong> means lasting for only a limited time."
+        word: "CONTRACT",
+        explanation: "A <strong>contract</strong> is a formal, legally binding agreement between parties. Luca originally struggled/skipped this question on the test."
     },
     {
         sentence: "The benefit to having a laptop computer over a desktop is that it is <span class='sentence-blank'>_______</span> and can be taken with you anywhere.",
-        options: ["stylish", "portable", "efficient", "expensive"],
-        correctIndex: 1,
+        options: ["portable", "temporary", "practical", "meager"],
+        correctIndex: 0,
         word: "PORTABLE",
-        explanation: "The context clue <strong>'can be taken with you anywhere'</strong> is the literal definition of <strong>'portable'</strong> (easy to carry). Luca originally selected 'efficient', which describes speed/wasted effort, not mobility."
+        explanation: "Since the laptop <strong>'can be taken with you anywhere'</strong>, it is <strong>portable</strong> (easy to move or carry). Luca originally selected 'efficient', which describes speed/wasted effort, not mobility."
     },
     {
         sentence: "Chris <span class='sentence-blank'>_______</span> his Uncle Tom so much that people often mistook Chris for Tom's son.",
-        options: ["loved", "admired", "resembled", "mimicked"],
+        options: ["emulated", "provoked", "resembled", "contracted"],
         correctIndex: 2,
-        word: "RESEMBLED",
-        explanation: "If people mistake Chris for Tom's son, it's because they look alike. <strong>'Resembled'</strong> means looked like. Luca originally selected 'loved', but loving someone does not make you look like them!"
+        word: "RESEMBLE",
+        explanation: "If people mistake Chris for Tom's son, it's because they look alike (<strong>resembled</strong>). Luca originally selected 'loved', but loving someone does not make you look like them!"
+    },
+    {
+        sentence: "The teacher grew more and more <span class='sentence-blank'>_______</span> as the student continued to tap his pen against the desk, despite being asked numerous times to stop.",
+        options: ["timid", "astonishing", "irritated", "attentive"],
+        correctIndex: 2,
+        word: "IRRITATED",
+        explanation: "Repeated pen-tapping after being asked to stop causes annoyance (<strong>irritated</strong>). Luca originally selected 'violent', which involves physical force and is far too extreme."
+    },
+    {
+        sentence: "The gymnast put on an <span class='sentence-blank'>_______</span> performance, landing three backflips in a row to win the gold medal.",
+        options: ["astonishing", "meager", "temporary", "timid"],
+        correctIndex: 0,
+        word: "ASTONISHING",
+        explanation: "Landing three backflips in a row to win gold is an extremely surprising, impressive, or <strong>astonishing</strong> feat. Luca originally confused this with 'exciting'."
+    },
+    {
+        sentence: "To express their <span class='sentence-blank'>_______</span>, the family sent a thank-you note and flowers to the doctor.",
+        options: ["contract", "provoke", "resemble", "gratitude"],
+        correctIndex: 3,
+        word: "GRATITUDE",
+        explanation: "Sending a thank-you note and flowers is a classic way to express thankfulness (<strong>gratitude</strong>). Luca originally confused this with 'luck'."
+    },
+    {
+        sentence: "The <span class='sentence-blank'>_______</span> kitten hesitated to leave the safety of its box to explore the new room.",
+        options: ["attentive", "timid", "irritated", "practical"],
+        correctIndex: 1,
+        word: "TIMID",
+        explanation: "A kitten that is fearful and hesitates to leave its box is being shy or <strong>timid</strong>. Luca originally confused this with 'nerdy' or 'talkative'."
+    },
+    {
+        sentence: "Although Cassandra was not excited about getting braces, she took comfort in knowing that they were <span class='sentence-blank'>_______</span> and would be off by the time she graduated.",
+        options: ["portable", "meager", "practical", "temporary"],
+        correctIndex: 3,
+        word: "TEMPORARY",
+        explanation: "The fact that the braces <strong>'would be off by the time she graduated'</strong> means they will not last forever, making them <strong>temporary</strong> (not permanent). Luca originally struggled, selecting 'fashionable', 'mandatory', and 'painless' before choosing correctly."
     },
     {
         sentence: "Though his suggested solution to the company's dilemma was <span class='sentence-blank'>_______</span>, it was far too expensive and would take too long to implement.",
-        options: ["practical", "unrealistic", "costly", "perfect"],
+        options: ["practical", "temporary", "attentive", "portable"],
         correctIndex: 0,
         word: "PRACTICAL",
-        explanation: "The word <strong>'Though'</strong> indicates a contrast. The solution was realistic and usable (<strong>'practical'</strong>), but could not be implemented because it cost too much and took too long."
+        explanation: "The contrast word <strong>'Though'</strong> indicates the solution was sensible and realistic (<strong>practical</strong>), but couldn't be done due to high cost and time. Luca originally wrote in his own 'E' choice instead of picking 'A'!"
     }
 ];
 
