@@ -125,6 +125,7 @@ const vocabularyData = [
 // SENTENCE CHALLENGE QUESTIONS DATASET
 // ==========================================================================
 const sentenceQuestions = [
+    // ATTENTIVE
     {
         sentence: "The <span class='sentence-blank'>_______</span> student sat in the front row, taking notes on everything the teacher said.",
         options: ["timid", "attentive", "meager", "temporary"],
@@ -133,12 +134,42 @@ const sentenceQuestions = [
         explanation: "An <strong>attentive</strong> student is one who pays close attention and is observant, which fits perfectly with sitting in the front row and taking notes on everything."
     },
     {
+        sentence: "A good lifeguard must remain <span class='sentence-blank'>_______</span> at all times to ensure the safety of everyone in the pool.",
+        options: ["attentive", "temporary", "practical", "portable"],
+        correctIndex: 0,
+        word: "ATTENTIVE",
+        explanation: "A lifeguard must remain watchful and alert, which is the definition of being <strong>attentive</strong>."
+    },
+    {
+        sentence: "The surgeon was extremely <span class='sentence-blank'>_______</span> during the delicate procedure, focusing on every tiny detail.",
+        options: ["astonishing", "meager", "attentive", "timid"],
+        correctIndex: 2,
+        word: "ATTENTIVE",
+        explanation: "Focusing on every tiny detail during a surgical procedure requires being highly alert and observant (<strong>attentive</strong>)."
+    },
+    // EMULATE
+    {
         sentence: "Young writers often try to <span class='sentence-blank'>_______</span> the style of their favorite authors until they find their own voice.",
         options: ["provoke", "resemble", "emulate", "contract"],
         correctIndex: 2,
         word: "EMULATE",
         explanation: "To <strong>emulate</strong> means to copy or imitate someone's style in order to match or excel them."
     },
+    {
+        sentence: "Hoping to <span class='sentence-blank'>_______</span> her older sister's academic success, Maya studied for two hours every evening.",
+        options: ["emulate", "provoke", "resemble", "contract"],
+        correctIndex: 0,
+        word: "EMULATE",
+        explanation: "Studying hard to achieve the same success as someone else is trying to match or copy them, which is to <strong>emulate</strong>."
+    },
+    {
+        sentence: "Many local businesses attempt to <span class='sentence-blank'>_______</span> the customer service practices of successful global companies.",
+        options: ["provoke", "emulate", "resemble", "contract"],
+        correctIndex: 1,
+        word: "EMULATE",
+        explanation: "Attempting to match the successful customer service practices of another business is trying to <strong>emulate</strong> them."
+    },
+    // PROVOKE
     {
         sentence: "If you tease the dog while it is eating, you might <span class='sentence-blank'>_______</span> it to bite.",
         options: ["provoke", "emulate", "resemble", "contract"],
@@ -147,12 +178,42 @@ const sentenceQuestions = [
         explanation: "To <strong>provoke</strong> means to stir up, anger, or instigate a reaction. Teasing a dog can provoke it to bite."
     },
     {
+        sentence: "The government’s new tax policy did not help the economy and served only to <span class='sentence-blank'>_______</span> angry protests across the city.",
+        options: ["emulate", "provoke", "resemble", "contract"],
+        correctIndex: 1,
+        word: "PROVOKE",
+        explanation: "Causing or triggering angry protests is an example of <strong>provoking</strong> a reaction."
+    },
+    {
+        sentence: "Making rude comments to your classmates will surely <span class='sentence-blank'>_______</span> an argument.",
+        options: ["emulate", "resemble", "provoke", "contract"],
+        correctIndex: 2,
+        word: "PROVOKE",
+        explanation: "Making rude comments will instigate or trigger (<strong>provoke</strong>) an argument."
+    },
+    // MEAGER
+    {
         sentence: "After weeks of drought, the farmers had only a <span class='sentence-blank'>_______</span> harvest of vegetables.",
         options: ["astonishing", "practical", "attentive", "meager"],
         correctIndex: 3,
         word: "MEAGER",
         explanation: "A <strong>meager</strong> harvest means one that is very small, thin, or limited in amount, which directly results from a drought."
     },
+    {
+        sentence: "The stranded hikers had to survive on a <span class='sentence-blank'>_______</span> daily ration of one energy bar and a cup of water.",
+        options: ["meager", "temporary", "portable", "practical"],
+        correctIndex: 0,
+        word: "MEAGER",
+        explanation: "A very small food supply (like one energy bar per day) is a <strong>meager</strong> ration."
+    },
+    {
+        sentence: "Despite the company's huge profits, the employees received only a <span class='sentence-blank'>_______</span> salary increase of one percent.",
+        options: ["practical", "attentive", "meager", "astonishing"],
+        correctIndex: 2,
+        word: "MEAGER",
+        explanation: "A salary increase of only one percent is extremely small and limited in amount, or <strong>meager</strong>."
+    },
+    // CONTRACT
     {
         sentence: "Before starting the construction project, the builder signed a legally binding <span class='sentence-blank'>_______</span> with the homeowner.",
         options: ["gratitude", "contract", "provoke", "emulate"],
@@ -161,12 +222,42 @@ const sentenceQuestions = [
         explanation: "A <strong>contract</strong> is a formal, legally binding agreement between parties."
     },
     {
+        sentence: "The professional athlete negotiated a new five-year <span class='sentence-blank'>_______</span> with the team worth millions of dollars.",
+        options: ["contract", "gratitude", "provoke", "temporary"],
+        correctIndex: 0,
+        word: "CONTRACT",
+        explanation: "Negotiating a formal multi-year agreement with a team is signing a sports <strong>contract</strong>."
+    },
+    {
+        sentence: "Always read the fine print before signing any <span class='sentence-blank'>_______</span> to buy a car.",
+        options: ["gratitude", "contract", "emulate", "provoke"],
+        correctIndex: 1,
+        word: "CONTRACT",
+        explanation: "Buying a car requires signing a formal purchase agreement, which is a legally binding <strong>contract</strong>."
+    },
+    // PORTABLE
+    {
         sentence: "The compact camping stove is designed to be <span class='sentence-blank'>_______</span>, allowing hikers to easily pack it in their bags.",
         options: ["portable", "temporary", "practical", "meager"],
         correctIndex: 0,
         word: "PORTABLE",
         explanation: "A compact stove that fits easily in a bag is easy to carry, which is the definition of <strong>portable</strong>."
     },
+    {
+        sentence: "Our school purchased a set of <span class='sentence-blank'>_______</span> keyboards so that students could practice music in any classroom.",
+        options: ["temporary", "portable", "practical", "astonishing"],
+        correctIndex: 1,
+        word: "PORTABLE",
+        explanation: "Keyboards that can be moved from classroom to classroom easily are <strong>portable</strong>."
+    },
+    {
+        sentence: "Early cell phones were heavy, but modern models are highly <span class='sentence-blank'>_______</span> and fit easily in a pocket.",
+        options: ["practical", "temporary", "portable", "meager"],
+        correctIndex: 2,
+        word: "PORTABLE",
+        explanation: "Fitting easily in a pocket makes a device highly convenient to move or carry (<strong>portable</strong>)."
+    },
+    // RESEMBLE
     {
         sentence: "Although they are not related, the two puppies <span class='sentence-blank'>_______</span> each other so much that it is hard to tell them apart.",
         options: ["emulate", "provoke", "resemble", "contract"],
@@ -175,12 +266,42 @@ const sentenceQuestions = [
         explanation: "To <strong>resemble</strong> means to look like or share a similar appearance with something else."
     },
     {
+        sentence: "The architecture of the new museum was designed to <span class='sentence-blank'>_______</span> the shape of a blooming lotus flower.",
+        options: ["resemble", "emulate", "provoke", "contract"],
+        correctIndex: 0,
+        word: "RESEMBLE",
+        explanation: "Being designed to look like a flower means the building was built to <strong>resemble</strong> it."
+    },
+    {
+        sentence: "Children often <span class='sentence-blank'>_______</span> one or both of their parents in their facial features and gestures.",
+        options: ["emulate", "resemble", "provoke", "contract"],
+        correctIndex: 1,
+        word: "RESEMBLE",
+        explanation: "Looking like or sharing physical features with your parents is to <strong>resemble</strong> them."
+    },
+    // IRRITATED
+    {
         sentence: "The driver became <span class='sentence-blank'>_______</span> when he got stuck in bumper-to-bumper traffic for over an hour.",
         options: ["timid", "astonishing", "irritated", "attentive"],
         correctIndex: 2,
         word: "IRRITATED",
         explanation: "Getting stuck in traffic for an hour causes annoyance and impatience (<strong>irritated</strong>)."
     },
+    {
+        sentence: "Sophie felt <span class='sentence-blank'>_______</span> when her younger brother kept interrupting her while she was on the phone.",
+        options: ["irritated", "temporary", "practical", "meager"],
+        correctIndex: 0,
+        word: "IRRITATED",
+        explanation: "Being repeatedly interrupted causes annoyance, making her feel <strong>irritated</strong>."
+    },
+    {
+        sentence: "The constant loud hum of the old air conditioner made everyone in the office feel <span class='sentence-blank'>_______</span>.",
+        options: ["attentive", "astonished", "timid", "irritated"],
+        correctIndex: 3,
+        word: "IRRITATED",
+        explanation: "A constant loud hum is an annoying disturbance that makes people feel <strong>irritated</strong>."
+    },
+    // ASTONISHING
     {
         sentence: "The gymnast put on an <span class='sentence-blank'>_______</span> performance, landing three backflips in a row to win the gold medal.",
         options: ["astonishing", "meager", "temporary", "timid"],
@@ -189,12 +310,42 @@ const sentenceQuestions = [
         explanation: "Landing three backflips in a row to win gold is an extremely surprising, impressive, or <strong>astonishing</strong> feat."
     },
     {
+        sentence: "The discovery of ancient ruins beneath the busy city streets was an <span class='sentence-blank'>_______</span> event for archaeologists.",
+        options: ["temporary", "practical", "astonishing", "meager"],
+        correctIndex: 2,
+        word: "ASTONISHING",
+        explanation: "Finding ancient ruins under a modern city is highly unexpected and surprising, or <strong>astonishing</strong>."
+    },
+    {
+        sentence: "It is <span class='sentence-blank'>_______</span> how quickly the young child learned to speak three different languages fluently.",
+        options: ["meager", "temporary", "astonishing", "timid"],
+        correctIndex: 2,
+        word: "ASTONISHING",
+        explanation: "Learning three languages fluently at a very young age is extremely impressive and surprising, or <strong>astonishing</strong>."
+    },
+    // GRATITUDE
+    {
         sentence: "To express their <span class='sentence-blank'>_______</span>, the family sent a thank-you note and flowers to the doctor.",
         options: ["contract", "provoke", "resemble", "gratitude"],
         correctIndex: 3,
         word: "GRATITUDE",
         explanation: "Sending a thank-you note and flowers is a classic way to express thankfulness (<strong>gratitude</strong>)."
     },
+    {
+        sentence: "The charity volunteers felt a deep sense of <span class='sentence-blank'>_______</span> when they saw the happy faces of the children.",
+        options: ["gratitude", "emulate", "provoke", "temporary"],
+        correctIndex: 0,
+        word: "GRATITUDE",
+        explanation: "Seeing children's happiness made the volunteers feel thankful and appreciated, a sense of <strong>gratitude</strong>."
+    },
+    {
+        sentence: "Writing in a daily journal can help you focus on positive things and cultivate <span class='sentence-blank'>_______</span>.",
+        options: ["contract", "provoke", "resemble", "gratitude"],
+        correctIndex: 3,
+        word: "GRATITUDE",
+        explanation: "Focusing on positive events in a journal helps build thankfulness, or <strong>gratitude</strong>."
+    },
+    // TIMID
     {
         sentence: "The <span class='sentence-blank'>_______</span> kitten hesitated to leave the safety of its box to explore the new room.",
         options: ["attentive", "timid", "irritated", "practical"],
@@ -203,6 +354,21 @@ const sentenceQuestions = [
         explanation: "A kitten that is fearful and hesitates to leave its box is being shy or <strong>timid</strong>."
     },
     {
+        sentence: "Unlike his loud and outgoing brother, Arthur was a <span class='sentence-blank'>_______</span> child who spoke in a quiet whisper.",
+        options: ["timid", "astonishing", "meager", "temporary"],
+        correctIndex: 0,
+        word: "TIMID",
+        explanation: "Speaking in a quiet whisper and being quiet suggests a lack of confidence or shyness, which is being <strong>timid</strong>."
+    },
+    {
+        sentence: "The deer stood still for a moment, but being a <span class='sentence-blank'>_______</span> creature, it quickly bolted when we stepped on a twig.",
+        options: ["attentive", "timid", "irritated", "practical"],
+        correctIndex: 1,
+        word: "TIMID",
+        explanation: "Deer are easily frightened and shy creatures, making them <strong>timid</strong>."
+    },
+    // TEMPORARY
+    {
         sentence: "The artist used wash-off chalk to create a <span class='sentence-blank'>_______</span> mural on the sidewalk that would disappear with the next rain.",
         options: ["portable", "meager", "practical", "temporary"],
         correctIndex: 3,
@@ -210,11 +376,40 @@ const sentenceQuestions = [
         explanation: "A chalk mural that washes away with rain is not permanent, it is <strong>temporary</strong>."
     },
     {
+        sentence: "When the power went out, we set up <span class='sentence-blank'>_______</span> lanterns until the main electricity was restored.",
+        options: ["temporary", "attentive", "practical", "portable"],
+        correctIndex: 0,
+        word: "TEMPORARY",
+        explanation: "Lanterns used only until the power comes back on are serving for a limited time, which is <strong>temporary</strong>."
+    },
+    {
+        sentence: "The ice rink in the city park is only <span class='sentence-blank'>_______</span> and will be taken down when spring arrives.",
+        options: ["portable", "meager", "practical", "temporary"],
+        correctIndex: 3,
+        word: "TEMPORARY",
+        explanation: "A rink that is taken down after winter is not permanent, making it <strong>temporary</strong>."
+    },
+    // PRACTICAL
+    {
         sentence: "When packing for a long backpacking trip, it is most <span class='sentence-blank'>_______</span> to bring only lightweight, multi-use items.",
         options: ["practical", "temporary", "attentive", "portable"],
         correctIndex: 0,
         word: "PRACTICAL",
         explanation: "Packing lightweight, multi-use items is sensible and useful (<strong>practical</strong>) for a long hike."
+    },
+    {
+        sentence: "While the tall glass sculpture was beautiful, it was not a <span class='sentence-blank'>_______</span> container for daily drinking water.",
+        options: ["practical", "meager", "astonishing", "timid"],
+        correctIndex: 0,
+        word: "PRACTICAL",
+        explanation: "A delicate glass sculpture is not suitable or sensible for everyday use, meaning it's not <strong>practical</strong>."
+    },
+    {
+        sentence: "Learning how to manage your budget is a very <span class='sentence-blank'>_______</span> skill that will help you throughout your life.",
+        options: ["temporary", "attentive", "portable", "practical"],
+        correctIndex: 3,
+        word: "PRACTICAL",
+        explanation: "Budgeting is a highly useful, realistic, and realistic skill for daily life (<strong>practical</strong>)."
     }
 ];
 
@@ -519,8 +714,8 @@ function resetSentenceChallenge() {
     document.getElementById("sentence-game").classList.remove("hidden");
     document.getElementById("sentence-results-card").classList.add("hidden");
     
-    // Shuffle sentence questions
-    sentenceQuestionsList = shuffleArray([...sentenceQuestions]);
+    // Shuffle sentence questions and take a random set of 15 questions
+    sentenceQuestionsList = shuffleArray([...sentenceQuestions]).slice(0, 15);
     currentSentenceIndex = 0;
     sentenceScore = 0;
     sentenceAnswersSummary = [];
