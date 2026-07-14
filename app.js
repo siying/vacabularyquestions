@@ -1097,6 +1097,47 @@ function resetSentenceChallenge() {
     loadSentenceQuestion();
 }
 
+// A list of words that are NOT in vocabularyData, to be used as external distractors
+const externalDistractors = [
+    "active", "creative", "anxious", "careless", "serious", "friendly", 
+    "clumsy", "helpful", "scold", "imprison", "emotional", "worry", 
+    "intelligent", "risky", "teacher", "violent", "exciting", "luck", 
+    "nerdy", "talkative", "painless", "mandatory", "generous", "honest"
+];
+
+function generateSentenceOptions(question) {
+    const correctWord = question.word.toLowerCase();
+    
+    // 1. Pick 1 external distractor (not in vocabularyData)
+    const validExternal = externalDistractors.filter(w => w.toLowerCase() !== correctWord);
+    const chosenExternal = validExternal[Math.floor(Math.random() * validExternal.length)];
+    
+    // 2. Pick 2 vocabulary distractors from the active session
+    let sessionWords = getFilteredSessionWords();
+    
+    // Filter out the correct word
+    let otherVocabWords = sessionWords
+        .map(w => w.word.toLowerCase())
+        .filter(word => word !== correctWord);
+        
+    // Shuffle and pick 2
+    let chosenVocab = shuffleArray([...otherVocabWords]).slice(0, 2);
+    
+    const correctText = correctWord;
+    const options = [correctText, chosenExternal.toLowerCase(), ...chosenVocab];
+    
+    // Shuffle the final options list
+    const shuffledOptions = shuffleArray([...options]);
+    
+    // Find the new correctIndex
+    const correctIndex = shuffledOptions.indexOf(correctText);
+    
+    return {
+        options: shuffledOptions,
+        correctIndex: correctIndex
+    };
+}
+
 function loadSentenceQuestion() {
     const currentQuestion = sentenceQuestionsList[currentSentenceIndex];
     
@@ -1117,12 +1158,17 @@ function loadSentenceQuestion() {
     const optionsContainer = document.getElementById("sentence-options-container");
     optionsContainer.innerHTML = "";
     
+    // Generate Options dynamically
+    const generated = generateSentenceOptions(currentQuestion);
+    currentQuestion.activeOptions = generated.options;
+    currentQuestion.activeCorrectIndex = generated.correctIndex;
+    
     // Render options
-    currentQuestion.options.forEach((option, index) => {
+    generated.options.forEach((option, index) => {
         const btn = document.createElement("button");
         btn.className = "option-btn";
         btn.innerText = option;
-        btn.onclick = () => selectSentenceAnswer(btn, index, currentQuestion.correctIndex);
+        btn.onclick = () => selectSentenceAnswer(btn, index, generated.correctIndex);
         optionsContainer.appendChild(btn);
     });
 }
@@ -1166,7 +1212,7 @@ function selectSentenceAnswer(selectedBtn, selectedIndex, correctIndex) {
     explanationEl.innerHTML = currentQuestion.explanation;
     
     // Update completed blank text in sentence
-    const correctText = currentQuestion.options[correctIndex];
+    const correctText = currentQuestion.activeOptions[correctIndex];
     document.getElementById("sentence-text-display").innerHTML = currentQuestion.sentence.replace("_______", correctText);
     
     // Update score indicator
