@@ -2,13 +2,15 @@
 // VOCABULARY DATASET
 // ==========================================================================
 const vocabularyData = [
+    // Day 1 Words
     {
         word: "ATTENTIVE",
         pos: "adjective",
         definition: "Paying close attention to something; alert, watchful, and observant.",
         synonyms: ["observant", "mindful", "vigilant", "alert"],
         example: "The attentive student took detailed notes and noticed the small mistake on the board.",
-        type: "error", // Flat-out error
+        type: "error",
+        day: 1,
         pitfall: "Don't confuse <strong>attentive</strong> with <strong>hardworking</strong>. While a hardworking person puts in effort, being attentive specifically means watching or listening carefully (observant)."
     },
     {
@@ -18,6 +20,7 @@ const vocabularyData = [
         synonyms: ["imitate", "copy", "mirror", "mimic"],
         example: "The young basketball player tried to emulate his favorite player's shooting technique.",
         type: "error",
+        day: 1,
         pitfall: "Don't confuse <strong>emulate</strong> with <strong>innovate</strong>. To innovate means to create something new, whereas to emulate means to copy or match something that already exists."
     },
     {
@@ -27,6 +30,7 @@ const vocabularyData = [
         synonyms: ["annoy", "anger", "instigate", "irritate"],
         example: "She tried not to provoke her brother while he was doing his homework.",
         type: "error",
+        day: 1,
         pitfall: "Don't confuse <strong>provoke</strong> with <strong>scold</strong>. Scolding is telling someone off after they do something wrong, whereas provoking is actively trying to make someone angry or trigger a reaction."
     },
     {
@@ -36,6 +40,7 @@ const vocabularyData = [
         synonyms: ["limited", "scarce", "scanty", "deficient"],
         example: "The hikers had to survive on a meager food supply during their last two days on the trail.",
         type: "error",
+        day: 1,
         pitfall: "Don't confuse <strong>meager</strong> with <strong>enthusiastic</strong>. Enthusiastic means showing great excitement, while meager refers to something that is very small or limited in size or amount."
     },
     {
@@ -45,6 +50,7 @@ const vocabularyData = [
         synonyms: ["agreement", "deal", "pact", "treaty"],
         example: "The actor signed a contract to star in three upcoming movies.",
         type: "error",
+        day: 1,
         pitfall: "Don't confuse <strong>contract</strong> with <strong>statement</strong> or <strong>marriage</strong>. While a contract can be used in marriage, its base definition is simply a binding agreement."
     },
     {
@@ -54,6 +60,7 @@ const vocabularyData = [
         synonyms: ["movable", "transportable", "lightweight"],
         example: "The benefit of a laptop over a desktop computer is that it is highly portable.",
         type: "error",
+        day: 1,
         pitfall: "Don't confuse <strong>portable</strong> with <strong>efficient</strong>. Efficient means working well without wasting time or energy. Portable means easy to move or carry from place to place."
     },
     {
@@ -63,6 +70,7 @@ const vocabularyData = [
         synonyms: ["look like", "mirror", "favor"],
         example: "The young boy resembled his father so much that friends often got their names mixed up.",
         type: "error",
+        day: 1,
         pitfall: "Don't confuse <strong>resemble</strong> with <strong>love</strong> or <strong>admire</strong>. You can resemble someone you've never met simply because you look like them. It is about appearance, not feelings."
     },
     {
@@ -72,6 +80,7 @@ const vocabularyData = [
         synonyms: ["annoyed", "bothered", "vexed", "peeved"],
         example: "The teacher grew irritated when the student ignored her repeated requests to stop tapping his pen.",
         type: "error",
+        day: 1,
         pitfall: "Don't confuse <strong>irritated</strong> with <strong>violent</strong>. Being irritated is a mild feeling of annoyance, while being violent involves physical force or aggression."
     },
     {
@@ -80,7 +89,8 @@ const vocabularyData = [
         definition: "Extremely surprising, impressive, or amazing.",
         synonyms: ["surprising", "astounding", "breathtaking", "amazing"],
         example: "The magician performed an astonishing card trick that left everyone speechless.",
-        type: "struggle", // Struggled/Corrected
+        type: "struggle",
+        day: 1,
         pitfall: "Don't confuse <strong>astonishing</strong> with <strong>exciting</strong>. While something astonishing can be exciting, astonishing specifically means it causes great surprise or disbelief (surprising)."
     },
     {
@@ -90,6 +100,7 @@ const vocabularyData = [
         synonyms: ["appreciation", "thankfulness", "gratefulness"],
         example: "He expressed his deep gratitude to his neighbors for helping clear the fallen tree.",
         type: "struggle",
+        day: 1,
         pitfall: "Don't confuse <strong>gratitude</strong> with <strong>luck</strong>. Luck is success brought by chance, while gratitude is the feeling of thankfulness you show to others."
     },
     {
@@ -99,6 +110,7 @@ const vocabularyData = [
         synonyms: ["shy", "bashful", "fearful", "apprehensive"],
         example: "The timid puppy hid behind its owner's legs when the guests arrived.",
         type: "struggle",
+        day: 1,
         pitfall: "Don't confuse <strong>timid</strong> with <strong>nerdy</strong> or <strong>talkative</strong>. Timid means shy and easily scared. A talkative person speaks a lot, and a nerdy person is highly studious—neither means shy."
     },
     {
@@ -108,6 +120,7 @@ const vocabularyData = [
         synonyms: ["short-term", "brief", "transient", "fleeting"],
         example: "The braces were only temporary, and she looked forward to having them off by graduation.",
         type: "struggle",
+        day: 1,
         pitfall: "Don't confuse <strong>temporary</strong> with <strong>painless</strong> or <strong>mandatory</strong>. Braces can be painful and mandatory (required), but the fact that they will be removed makes them temporary."
     },
     {
@@ -117,7 +130,80 @@ const vocabularyData = [
         synonyms: ["sensible", "realistic", "functional", "useful"],
         example: "Although the design looked futuristic, it was not practical for everyday use.",
         type: "struggle",
+        day: 1,
         pitfall: "Make sure to select the option that matches the spelling in the choices. Don't invent your own options (like writing a handwritten E option)!"
+    },
+
+    // Day 2 Words
+    {
+        word: "EXILE",
+        pos: "noun / verb",
+        definition: "The state of being barred from one's native country; to banish someone.",
+        synonyms: ["banish", "deport", "expel", "eject"],
+        example: "The king decided to exile the rebel leader to a distant island.",
+        type: "error",
+        day: 2,
+        pitfall: "Don't confuse <strong>exile</strong> with <strong>imprison</strong>. Imprisoning means locking someone up in a local jail, while exile means forcing them to leave their country completely."
+    },
+    {
+        word: "INDIFFERENT",
+        pos: "adjective",
+        definition: "Having no particular interest, sympathy, or concern; uncaring.",
+        synonyms: ["unconcerned", "disinterested", "detached", "uncaring"],
+        example: "She was indifferent to the choice of restaurant and told her friends to pick whatever they liked.",
+        type: "error",
+        day: 2,
+        pitfall: "Don't confuse <strong>indifferent</strong> with <strong>emotional</strong>. Indifferent means showing no care or feelings at all, which is the opposite of being emotional."
+    },
+    {
+        word: "DESPAIR",
+        pos: "noun / verb",
+        definition: "The complete loss or absence of hope.",
+        synonyms: ["hopelessness", "distress", "misery", "despondency"],
+        example: "In a moment of despair, he felt like he would never find his way home.",
+        type: "struggle",
+        day: 2,
+        pitfall: "Don't confuse <strong>despair</strong> with <strong>worry</strong>. Worry is anxiety about a future event, whereas despair is a deeper state of complete hopelessness."
+    },
+    {
+        word: "TRIVIAL",
+        pos: "adjective",
+        definition: "Of little value, size, or importance; minor and inconsequential.",
+        synonyms: ["inconsequential", "minor", "insignificant", "petty"],
+        example: "They spent hours arguing over a trivial detail that did not affect the final project.",
+        type: "struggle",
+        day: 2,
+        pitfall: "Don't confuse <strong>trivial</strong> with <strong>intelligent</strong>. Crucial is the opposite of trivial, and intelligent is unrelated. Trivial means minor or inconsequential."
+    },
+    {
+        word: "TEDIOUS",
+        pos: "adjective",
+        definition: "Too long, slow, or dull; tiresome and boring.",
+        synonyms: ["boring", "dull", "monotonous", "tiresome"],
+        example: "Sorting through thousands of old files was a tedious task.",
+        type: "struggle",
+        day: 2,
+        pitfall: "Don't confuse <strong>tedious</strong> with <strong>risky</strong>. Risky means dangerous, while tedious means slow and boring."
+    },
+    {
+        word: "APPRENTICE",
+        pos: "noun",
+        definition: "A trainee who is learning a trade from a skilled master employer.",
+        synonyms: ["trainee", "learner", "novice", "pupil"],
+        example: "The young blacksmith worked as an apprentice to master the craft.",
+        type: "struggle",
+        day: 2,
+        pitfall: "Don't confuse <strong>apprentice</strong> with <strong>teacher</strong> or <strong>master</strong>. A teacher is the one who instructs, whereas an apprentice is the student or trainee."
+    },
+    {
+        word: "OPTIMISTIC",
+        pos: "adjective",
+        definition: "Hopeful and confident about the future or the success of something.",
+        synonyms: ["hopeful", "positive", "confident", "cheerful"],
+        example: "Despite the rain, she remained optimistic that the sun would come out.",
+        type: "struggle",
+        day: 2,
+        pitfall: "Don't confuse <strong>optimistic</strong> with <strong>worried</strong>. Worried means anxious (the opposite of optimistic), while optimistic means hopeful."
     }
 ];
 
@@ -125,12 +211,14 @@ const vocabularyData = [
 // SENTENCE CHALLENGE QUESTIONS DATASET
 // ==========================================================================
 const sentenceQuestions = [
+    // ==================== DAY 1 QUESTIONS ====================
     // ATTENTIVE
     {
         sentence: "The <span class='sentence-blank'>_______</span> student sat in the front row, taking notes on everything the teacher said.",
         options: ["timid", "attentive", "meager", "temporary"],
         correctIndex: 1,
         word: "ATTENTIVE",
+        day: 1,
         explanation: "An <strong>attentive</strong> student is one who pays close attention and is observant, which fits perfectly with sitting in the front row and taking notes on everything."
     },
     {
@@ -138,6 +226,7 @@ const sentenceQuestions = [
         options: ["attentive", "temporary", "practical", "portable"],
         correctIndex: 0,
         word: "ATTENTIVE",
+        day: 1,
         explanation: "A lifeguard must remain watchful and alert, which is the definition of being <strong>attentive</strong>."
     },
     {
@@ -145,6 +234,7 @@ const sentenceQuestions = [
         options: ["astonishing", "meager", "attentive", "timid"],
         correctIndex: 2,
         word: "ATTENTIVE",
+        day: 1,
         explanation: "Focusing on every tiny detail during a surgical procedure requires being highly alert and observant (<strong>attentive</strong>)."
     },
     // EMULATE
@@ -153,6 +243,7 @@ const sentenceQuestions = [
         options: ["provoke", "resemble", "emulate", "contract"],
         correctIndex: 2,
         word: "EMULATE",
+        day: 1,
         explanation: "To <strong>emulate</strong> means to copy or imitate someone's style in order to match or excel them."
     },
     {
@@ -160,6 +251,7 @@ const sentenceQuestions = [
         options: ["emulate", "provoke", "resemble", "contract"],
         correctIndex: 0,
         word: "EMULATE",
+        day: 1,
         explanation: "Studying hard to achieve the same success as someone else is trying to match or copy them, which is to <strong>emulate</strong>."
     },
     {
@@ -167,6 +259,7 @@ const sentenceQuestions = [
         options: ["provoke", "emulate", "resemble", "contract"],
         correctIndex: 1,
         word: "EMULATE",
+        day: 1,
         explanation: "Attempting to match the successful customer service practices of another business is trying to <strong>emulate</strong> them."
     },
     // PROVOKE
@@ -175,6 +268,7 @@ const sentenceQuestions = [
         options: ["provoke", "emulate", "resemble", "contract"],
         correctIndex: 0,
         word: "PROVOKE",
+        day: 1,
         explanation: "To <strong>provoke</strong> means to stir up, anger, or instigate a reaction. Teasing a dog can provoke it to bite."
     },
     {
@@ -182,6 +276,7 @@ const sentenceQuestions = [
         options: ["emulate", "provoke", "resemble", "contract"],
         correctIndex: 1,
         word: "PROVOKE",
+        day: 1,
         explanation: "Causing or triggering angry protests is an example of <strong>provoking</strong> a reaction."
     },
     {
@@ -189,6 +284,7 @@ const sentenceQuestions = [
         options: ["emulate", "resemble", "provoke", "contract"],
         correctIndex: 2,
         word: "PROVOKE",
+        day: 1,
         explanation: "Making rude comments will instigate or trigger (<strong>provoke</strong>) an argument."
     },
     // MEAGER
@@ -197,6 +293,7 @@ const sentenceQuestions = [
         options: ["astonishing", "practical", "attentive", "meager"],
         correctIndex: 3,
         word: "MEAGER",
+        day: 1,
         explanation: "A <strong>meager</strong> harvest means one that is very small, thin, or limited in amount, which directly results from a drought."
     },
     {
@@ -204,6 +301,7 @@ const sentenceQuestions = [
         options: ["meager", "temporary", "portable", "practical"],
         correctIndex: 0,
         word: "MEAGER",
+        day: 1,
         explanation: "A very small food supply (like one energy bar per day) is a <strong>meager</strong> ration."
     },
     {
@@ -211,6 +309,7 @@ const sentenceQuestions = [
         options: ["practical", "attentive", "meager", "astonishing"],
         correctIndex: 2,
         word: "MEAGER",
+        day: 1,
         explanation: "A salary increase of only one percent is extremely small and limited in amount, or <strong>meager</strong>."
     },
     // CONTRACT
@@ -219,6 +318,7 @@ const sentenceQuestions = [
         options: ["gratitude", "contract", "provoke", "emulate"],
         correctIndex: 1,
         word: "CONTRACT",
+        day: 1,
         explanation: "A <strong>contract</strong> is a formal, legally binding agreement between parties."
     },
     {
@@ -226,6 +326,7 @@ const sentenceQuestions = [
         options: ["contract", "gratitude", "provoke", "temporary"],
         correctIndex: 0,
         word: "CONTRACT",
+        day: 1,
         explanation: "Negotiating a formal multi-year agreement with a team is signing a sports <strong>contract</strong>."
     },
     {
@@ -233,6 +334,7 @@ const sentenceQuestions = [
         options: ["gratitude", "contract", "emulate", "provoke"],
         correctIndex: 1,
         word: "CONTRACT",
+        day: 1,
         explanation: "Buying a car requires signing a formal purchase agreement, which is a legally binding <strong>contract</strong>."
     },
     // PORTABLE
@@ -241,6 +343,7 @@ const sentenceQuestions = [
         options: ["portable", "temporary", "practical", "meager"],
         correctIndex: 0,
         word: "PORTABLE",
+        day: 1,
         explanation: "A compact stove that fits easily in a bag is easy to carry, which is the definition of <strong>portable</strong>."
     },
     {
@@ -248,6 +351,7 @@ const sentenceQuestions = [
         options: ["temporary", "portable", "practical", "astonishing"],
         correctIndex: 1,
         word: "PORTABLE",
+        day: 1,
         explanation: "Keyboards that can be moved from classroom to classroom easily are <strong>portable</strong>."
     },
     {
@@ -255,6 +359,7 @@ const sentenceQuestions = [
         options: ["practical", "temporary", "portable", "meager"],
         correctIndex: 2,
         word: "PORTABLE",
+        day: 1,
         explanation: "Fitting easily in a pocket makes a device highly convenient to move or carry (<strong>portable</strong>)."
     },
     // RESEMBLE
@@ -263,6 +368,7 @@ const sentenceQuestions = [
         options: ["emulate", "provoke", "resemble", "contract"],
         correctIndex: 2,
         word: "RESEMBLE",
+        day: 1,
         explanation: "To <strong>resemble</strong> means to look like or share a similar appearance with something else."
     },
     {
@@ -270,6 +376,7 @@ const sentenceQuestions = [
         options: ["resemble", "emulate", "provoke", "contract"],
         correctIndex: 0,
         word: "RESEMBLE",
+        day: 1,
         explanation: "Being designed to look like a flower means the building was built to <strong>resemble</strong> it."
     },
     {
@@ -277,6 +384,7 @@ const sentenceQuestions = [
         options: ["emulate", "resemble", "provoke", "contract"],
         correctIndex: 1,
         word: "RESEMBLE",
+        day: 1,
         explanation: "Looking like or sharing physical features with your parents is to <strong>resemble</strong> them."
     },
     // IRRITATED
@@ -285,6 +393,7 @@ const sentenceQuestions = [
         options: ["timid", "astonishing", "irritated", "attentive"],
         correctIndex: 2,
         word: "IRRITATED",
+        day: 1,
         explanation: "Getting stuck in traffic for an hour causes annoyance and impatience (<strong>irritated</strong>)."
     },
     {
@@ -292,6 +401,7 @@ const sentenceQuestions = [
         options: ["irritated", "temporary", "practical", "meager"],
         correctIndex: 0,
         word: "IRRITATED",
+        day: 1,
         explanation: "Being repeatedly interrupted causes annoyance, making her feel <strong>irritated</strong>."
     },
     {
@@ -299,6 +409,7 @@ const sentenceQuestions = [
         options: ["attentive", "astonished", "timid", "irritated"],
         correctIndex: 3,
         word: "IRRITATED",
+        day: 1,
         explanation: "A constant loud hum is an annoying disturbance that makes people feel <strong>irritated</strong>."
     },
     // ASTONISHING
@@ -307,6 +418,7 @@ const sentenceQuestions = [
         options: ["astonishing", "meager", "temporary", "timid"],
         correctIndex: 0,
         word: "ASTONISHING",
+        day: 1,
         explanation: "Landing three backflips in a row to win gold is an extremely surprising, impressive, or <strong>astonishing</strong> feat."
     },
     {
@@ -314,6 +426,7 @@ const sentenceQuestions = [
         options: ["temporary", "practical", "astonishing", "meager"],
         correctIndex: 2,
         word: "ASTONISHING",
+        day: 1,
         explanation: "Finding ancient ruins under a modern city is highly unexpected and surprising, or <strong>astonishing</strong>."
     },
     {
@@ -321,6 +434,7 @@ const sentenceQuestions = [
         options: ["meager", "temporary", "astonishing", "timid"],
         correctIndex: 2,
         word: "ASTONISHING",
+        day: 1,
         explanation: "Learning three languages fluently at a very young age is extremely impressive and surprising, or <strong>astonishing</strong>."
     },
     // GRATITUDE
@@ -329,6 +443,7 @@ const sentenceQuestions = [
         options: ["contract", "provoke", "resemble", "gratitude"],
         correctIndex: 3,
         word: "GRATITUDE",
+        day: 1,
         explanation: "Sending a thank-you note and flowers is a classic way to express thankfulness (<strong>gratitude</strong>)."
     },
     {
@@ -336,6 +451,7 @@ const sentenceQuestions = [
         options: ["gratitude", "emulate", "provoke", "temporary"],
         correctIndex: 0,
         word: "GRATITUDE",
+        day: 1,
         explanation: "Seeing children's happiness made the volunteers feel thankful and appreciated, a sense of <strong>gratitude</strong>."
     },
     {
@@ -343,6 +459,7 @@ const sentenceQuestions = [
         options: ["contract", "provoke", "resemble", "gratitude"],
         correctIndex: 3,
         word: "GRATITUDE",
+        day: 1,
         explanation: "Focusing on positive events in a journal helps build thankfulness, or <strong>gratitude</strong>."
     },
     // TIMID
@@ -351,6 +468,7 @@ const sentenceQuestions = [
         options: ["attentive", "timid", "irritated", "practical"],
         correctIndex: 1,
         word: "TIMID",
+        day: 1,
         explanation: "A kitten that is fearful and hesitates to leave its box is being shy or <strong>timid</strong>."
     },
     {
@@ -358,6 +476,7 @@ const sentenceQuestions = [
         options: ["timid", "astonishing", "meager", "temporary"],
         correctIndex: 0,
         word: "TIMID",
+        day: 1,
         explanation: "Speaking in a quiet whisper and being quiet suggests a lack of confidence or shyness, which is being <strong>timid</strong>."
     },
     {
@@ -365,6 +484,7 @@ const sentenceQuestions = [
         options: ["attentive", "timid", "irritated", "practical"],
         correctIndex: 1,
         word: "TIMID",
+        day: 1,
         explanation: "Deer are easily frightened and shy creatures, making them <strong>timid</strong>."
     },
     // TEMPORARY
@@ -373,6 +493,7 @@ const sentenceQuestions = [
         options: ["portable", "meager", "practical", "temporary"],
         correctIndex: 3,
         word: "TEMPORARY",
+        day: 1,
         explanation: "A chalk mural that washes away with rain is not permanent, it is <strong>temporary</strong>."
     },
     {
@@ -380,6 +501,7 @@ const sentenceQuestions = [
         options: ["temporary", "attentive", "practical", "portable"],
         correctIndex: 0,
         word: "TEMPORARY",
+        day: 1,
         explanation: "Lanterns used only until the power comes back on are serving for a limited time, which is <strong>temporary</strong>."
     },
     {
@@ -387,6 +509,7 @@ const sentenceQuestions = [
         options: ["portable", "meager", "practical", "temporary"],
         correctIndex: 3,
         word: "TEMPORARY",
+        day: 1,
         explanation: "A rink that is taken down after winter is not permanent, making it <strong>temporary</strong>."
     },
     // PRACTICAL
@@ -395,6 +518,7 @@ const sentenceQuestions = [
         options: ["practical", "temporary", "attentive", "portable"],
         correctIndex: 0,
         word: "PRACTICAL",
+        day: 1,
         explanation: "Packing lightweight, multi-use items is sensible and useful (<strong>practical</strong>) for a long hike."
     },
     {
@@ -402,6 +526,7 @@ const sentenceQuestions = [
         options: ["practical", "meager", "astonishing", "timid"],
         correctIndex: 0,
         word: "PRACTICAL",
+        day: 1,
         explanation: "A delicate glass sculpture is not suitable or sensible for everyday use, meaning it's not <strong>practical</strong>."
     },
     {
@@ -409,7 +534,185 @@ const sentenceQuestions = [
         options: ["temporary", "attentive", "portable", "practical"],
         correctIndex: 3,
         word: "PRACTICAL",
+        day: 1,
         explanation: "Budgeting is a highly useful, realistic, and realistic skill for daily life (<strong>practical</strong>)."
+    },
+
+    // ==================== DAY 2 QUESTIONS ====================
+    // EXILE
+    {
+        sentence: "After the revolution, the former dictator was forced to live in <span class='sentence-blank'>_______</span> in a small European village.",
+        options: ["exile", "apprentice", "indifferent", "optimistic"],
+        correctIndex: 0,
+        word: "EXILE",
+        day: 2,
+        explanation: "Being forced to live away from one's native country is living in <strong>exile</strong>."
+    },
+    {
+        sentence: "To punish the rebel commander, the court decided to <span class='sentence-blank'>_______</span> him from the kingdom forever.",
+        options: ["emulate", "exile", "provoke", "contract"],
+        correctIndex: 1,
+        word: "EXILE",
+        day: 2,
+        explanation: "Forcing someone to leave their kingdom permanently is to <strong>exile</strong> (banish) them."
+    },
+    {
+        sentence: "The writer spent ten years in <span class='sentence-blank'>_______</span>, longing for the day he could safely return to his homeland.",
+        options: ["gratitude", "contract", "exile", "despair"],
+        correctIndex: 2,
+        word: "EXILE",
+        day: 2,
+        explanation: "Longing to return home implies they are barred from it, living in <strong>exile</strong>."
+    },
+    // INDIFFERENT
+    {
+        sentence: "Unlike his passionate classmates, Leo was completely <span class='sentence-blank'>_______</span> to politics and chose not to vote.",
+        options: ["indifferent", "attentive", "timid", "astonishing"],
+        correctIndex: 0,
+        word: "INDIFFERENT",
+        day: 2,
+        explanation: "Having no interest, care, or concern about something is being <strong>indifferent</strong>."
+    },
+    {
+        sentence: "The cat seemed completely <span class='sentence-blank'>_______</span> to the new toy, preferring to sleep in the cardboard box instead.",
+        options: ["indifferent", "attentive", "optimistic", "tedious"],
+        correctIndex: 0,
+        word: "INDIFFERENT",
+        day: 2,
+        explanation: "Uncaring or showing no interest in the new toy means the cat is <strong>indifferent</strong>."
+    },
+    {
+        sentence: "Many people are <span class='sentence-blank'>_______</span> to local news, but they pay close attention to global events.",
+        options: ["indifferent", "attentive", "optimistic", "tedious"],
+        correctIndex: 0,
+        word: "INDIFFERENT",
+        day: 2,
+        explanation: "Showing no interest or care about local news is being <strong>indifferent</strong>."
+    },
+    // DESPAIR
+    {
+        sentence: "After losing his job and his home, he fell into deep <span class='sentence-blank'>_______</span> about his future.",
+        options: ["despair", "gratitude", "apprentice", "exile"],
+        correctIndex: 0,
+        word: "DESPAIR",
+        day: 2,
+        explanation: "Losing everything leads to a complete absence of hope, which is <strong>despair</strong>."
+    },
+    {
+        sentence: "Though they were lost in the wilderness for days, the hikers tried not to let <span class='sentence-blank'>_______</span> take over.",
+        options: ["gratitude", "despair", "contract", "apprentice"],
+        correctIndex: 1,
+        word: "DESPAIR",
+        day: 2,
+        explanation: "Letting go of hope completely is letting <strong>despair</strong> take over."
+    },
+    {
+        sentence: "The team looked on in <span class='sentence-blank'>_______</span> as their opponents scored the winning goal in the final seconds.",
+        options: ["despair", "gratitude", "exile", "contract"],
+        correctIndex: 0,
+        word: "DESPAIR",
+        day: 2,
+        explanation: "Watching the opponents win at the last second causes a feeling of hopelessness (<strong>despair</strong>)."
+    },
+    // TRIVIAL
+    {
+        sentence: "Don't waste your energy worrying about <span class='sentence-blank'>_______</span> problems that won't matter next week.",
+        options: ["trivial", "astonishing", "practical", "temporary"],
+        correctIndex: 0,
+        word: "TRIVIAL",
+        day: 2,
+        explanation: "Minor problems of very little value or importance are <strong>trivial</strong>."
+    },
+    {
+        sentence: "The teacher ignored the student's <span class='sentence-blank'>_______</span> question and continued with the lesson.",
+        options: ["practical", "attentive", "trivial", "meager"],
+        correctIndex: 2,
+        word: "TRIVIAL",
+        day: 2,
+        explanation: "Unimportant or minor questions are <strong>trivial</strong>."
+    },
+    {
+        sentence: "In the grand scheme of the project, a mistake of two dollars is completely <span class='sentence-blank'>_______</span>.",
+        options: ["trivial", "astonishing", "temporary", "portable"],
+        correctIndex: 0,
+        word: "TRIVIAL",
+        day: 2,
+        explanation: "A tiny mistake of two dollars in a large project is of little value or <strong>trivial</strong>."
+    },
+    // TEDIOUS
+    {
+        sentence: "Entering data into spreadsheets for eight hours a day can be a highly <span class='sentence-blank'>_______</span> task.",
+        options: ["tedious", "timid", "astonishing", "attentive"],
+        correctIndex: 0,
+        word: "TEDIOUS",
+        day: 2,
+        explanation: "Spreadsheets for eight hours is dull, slow, and tiresome (<strong>tedious</strong>)."
+    },
+    {
+        sentence: "We sat through a <span class='sentence-blank'>_______</span> three-hour lecture on history that sent half the class to sleep.",
+        options: ["tedious", "temporary", "practical", "meager"],
+        correctIndex: 0,
+        word: "TEDIOUS",
+        day: 2,
+        explanation: "A lecture that puts people to sleep is boring and tiresome (<strong>tedious</strong>)."
+    },
+    {
+        sentence: "Cleaning the grout between bathroom tiles with a toothbrush is slow and <span class='sentence-blank'>_______</span> work.",
+        options: ["portable", "meager", "practical", "tedious"],
+        correctIndex: 3,
+        word: "TEDIOUS",
+        day: 2,
+        explanation: "Cleaning grout with a toothbrush is slow, repetitive, and dull (<strong>tedious</strong>)."
+    },
+    // APPRENTICE
+    {
+        sentence: "The young carpenter began his career as an <span class='sentence-blank'>_______</span>, learning the trade from a master craftsman.",
+        options: ["apprentice", "contract", "gratitude", "exile"],
+        correctIndex: 0,
+        word: "APPRENTICE",
+        day: 2,
+        explanation: "Someone learning a trade from a master is an <strong>apprentice</strong>."
+    },
+    {
+        sentence: "As a new <span class='sentence-blank'>_______</span> at the bakery, Clara spent her first week just learning how to knead dough.",
+        options: ["contract", "apprentice", "gratitude", "despair"],
+        correctIndex: 1,
+        word: "APPRENTICE",
+        day: 2,
+        explanation: "A new trainee learning a trade is an <strong>apprentice</strong>."
+    },
+    {
+        sentence: "In medieval times, a young person would work as an <span class='sentence-blank'>_______</span> for seven years to master a skill.",
+        options: ["apprentice", "exile", "contract", "gratitude"],
+        correctIndex: 0,
+        word: "APPRENTICE",
+        day: 2,
+        explanation: "Working to learn a skill from a master is being an <strong>apprentice</strong>."
+    },
+    // OPTIMISTIC
+    {
+        sentence: "Despite the company's financial trouble, the CEO remained <span class='sentence-blank'>_______</span> about the new product's success.",
+        options: ["optimistic", "timid", "meager", "temporary"],
+        correctIndex: 0,
+        word: "OPTIMISTIC",
+        day: 2,
+        explanation: "Remaining hopeful and confident about success is being <strong>optimistic</strong>."
+    },
+    {
+        sentence: "It pays to be <span class='sentence-blank'>_______</span> because a positive attitude makes overcoming challenges much easier.",
+        options: ["optimistic", "temporary", "practical", "portable"],
+        correctIndex: 0,
+        word: "OPTIMISTIC",
+        day: 2,
+        explanation: "A positive attitude corresponds to being <strong>optimistic</strong>."
+    },
+    {
+        sentence: "While some expected the game to be lost, the fans were <span class='sentence-blank'>_______</span> that their team could make a comeback.",
+        options: ["astonishing", "meager", "optimistic", "timid"],
+        correctIndex: 2,
+        word: "OPTIMISTIC",
+        day: 2,
+        explanation: "Being hopeful and confident about a comeback is being <strong>optimistic</strong>."
     }
 ];
 
@@ -418,6 +721,7 @@ const sentenceQuestions = [
 // ==========================================================================
 let currentTab = "study";
 let studyFilter = "all";
+let currentSession = "day2"; // Default to Day 2 (Latest Day First)
 
 // Quiz State
 let quizMode = "word-to-def";
@@ -433,11 +737,58 @@ let sentenceScore = 0;
 let sentenceAnswersSummary = [];
 
 // ==========================================================================
+// DATASET FILTER HELPERS
+// ==========================================================================
+function getFilteredSessionWords() {
+    if (currentSession === "overall") {
+        return [...vocabularyData];
+    } else if (currentSession === "day1") {
+        return vocabularyData.filter(w => w.day === 1);
+    } else if (currentSession === "day2") {
+        return vocabularyData.filter(w => w.day === 2);
+    }
+    return [...vocabularyData];
+}
+
+function getFilteredSessionSentences() {
+    if (currentSession === "overall") {
+        return [...sentenceQuestions];
+    } else if (currentSession === "day1") {
+        return sentenceQuestions.filter(q => q.day === 1);
+    } else if (currentSession === "day2") {
+        return sentenceQuestions.filter(q => q.day === 2);
+    }
+    return [...sentenceQuestions];
+}
+
+// ==========================================================================
 // INITIALIZATION
 // ==========================================================================
 document.addEventListener("DOMContentLoaded", () => {
-    renderStudyDeck();
+    switchSession("day2");
 });
+
+// ==========================================================================
+// SESSION SWITCHING
+// ==========================================================================
+function switchSession(sessionId) {
+    currentSession = sessionId;
+    
+    // Update session selector buttons styling
+    document.querySelectorAll(".session-btn").forEach(btn => {
+        btn.classList.remove("active");
+    });
+    document.getElementById(`session-btn-${sessionId}`).classList.add("active");
+    
+    // Refresh the active tab
+    if (currentTab === "study") {
+        renderStudyDeck();
+    } else if (currentTab === "quiz") {
+        resetQuizSetup();
+    } else if (currentTab === "sentences") {
+        resetSentenceChallenge();
+    }
+}
 
 // ==========================================================================
 // TAB NAVIGATION
@@ -481,11 +832,25 @@ function filterStudyDeck(filter) {
     renderStudyDeck();
 }
 
+function updateDeckControls() {
+    const sessionWords = getFilteredSessionWords();
+    const allCount = sessionWords.length;
+    const errorCount = sessionWords.filter(item => item.type === "error").length;
+    const struggleCount = sessionWords.filter(item => item.type === "struggle").length;
+    
+    document.getElementById("filter-all").innerText = `All Words (${allCount})`;
+    document.getElementById("filter-errors").innerText = `Flat-Out Errors (${errorCount})`;
+    document.getElementById("filter-struggles").innerText = `Struggled/Corrected (${struggleCount})`;
+}
+
 function renderStudyDeck() {
+    updateDeckControls();
+    
     const grid = document.getElementById("words-grid");
     grid.innerHTML = "";
     
-    const filteredWords = vocabularyData.filter(item => {
+    const sessionWords = getFilteredSessionWords();
+    const filteredWords = sessionWords.filter(item => {
         if (studyFilter === "all") return true;
         return item.type === (studyFilter === "errors" ? "error" : "struggle");
     });
@@ -555,8 +920,11 @@ function startQuiz() {
     document.getElementById("quiz-game").classList.remove("hidden");
     document.getElementById("quiz-results-card").classList.add("hidden");
     
-    // Prepare questions (Shuffle dataset and take up to 10 questions)
-    quizQuestions = shuffleArray([...vocabularyData]).slice(0, 10);
+    // Prepare questions (Shuffle filtered session words)
+    const sessionWords = getFilteredSessionWords();
+    const quizLength = currentSession === "day2" ? 7 : (currentSession === "day1" ? 10 : 15);
+    
+    quizQuestions = shuffleArray([...sessionWords]).slice(0, quizLength);
     currentQuizIndex = 0;
     quizScore = 0;
     quizAnswersSummary = [];
@@ -591,7 +959,7 @@ function loadQuizQuestion() {
         questionTextEl.innerHTML = `What is the definition of <span class="accent-text" style="font-weight: 800;">${currentQuestion.word}</span>?`;
         correctAnswer = currentQuestion.definition;
         
-        // Grab 3 random incorrect definitions
+        // Grab 3 random incorrect definitions from full dataset
         const otherDefs = vocabularyData
             .filter(item => item.word !== currentQuestion.word)
             .map(item => item.definition);
@@ -603,7 +971,7 @@ function loadQuizQuestion() {
         questionTextEl.innerHTML = `Which word means: <br><span style="font-size: 1.25rem; font-weight: 500; font-style: italic; display:block; margin-top: 1rem; color: #cbd5e1;">"${currentQuestion.definition}"</span>`;
         correctAnswer = currentQuestion.word;
         
-        // Grab 3 random incorrect words
+        // Grab 3 random incorrect words from full dataset
         const otherWords = vocabularyData
             .filter(item => item.word !== currentQuestion.word)
             .map(item => item.word);
@@ -673,6 +1041,9 @@ function nextQuizQuestion() {
     }
 }
 
+// ==========================================================================
+// RESULTS DISPLAY AND HELPERS
+// ==========================================================================
 function showQuizResults() {
     document.getElementById("quiz-game").classList.add("hidden");
     const resultsCard = document.getElementById("quiz-results-card");
@@ -714,8 +1085,11 @@ function resetSentenceChallenge() {
     document.getElementById("sentence-game").classList.remove("hidden");
     document.getElementById("sentence-results-card").classList.add("hidden");
     
-    // Shuffle sentence questions and take a random set of 15 questions
-    sentenceQuestionsList = shuffleArray([...sentenceQuestions]).slice(0, 15);
+    // Shuffle sentence questions from current session and take a random set
+    const sessionSentences = getFilteredSessionSentences();
+    const challengeLength = currentSession === "day2" ? 10 : 15;
+    
+    sentenceQuestionsList = shuffleArray([...sessionSentences]).slice(0, challengeLength);
     currentSentenceIndex = 0;
     sentenceScore = 0;
     sentenceAnswersSummary = [];

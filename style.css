@@ -787,6 +787,86 @@ body {
 /* ==========================================================================
    UTILITY STYLES
    ========================================================================== */
+/* Global Session Selector */
+.global-session-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 3rem;
+    background: rgba(20, 27, 45, 0.45);
+    border: 1px solid var(--card-border);
+    padding: 0.6rem 1.5rem;
+    border-radius: 50px;
+    backdrop-filter: blur(16px);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--shadow-subtle);
+}
+
+.session-label {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.session-toggle {
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--card-border);
+    padding: 0.25rem;
+    border-radius: 50px;
+    gap: 0.25rem;
+}
+
+.session-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.session-btn:hover {
+    color: var(--text-main);
+}
+
+.session-btn.active {
+    color: var(--text-main);
+    background: var(--grad-indigo-purple);
+    box-shadow: 0 2px 10px rgba(79, 70, 229, 0.4);
+}
+
+@media (max-width: 768px) {
+    .global-session-selector {
+        flex-direction: column;
+        gap: 0.75rem;
+        border-radius: var(--radius-md);
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    .session-toggle {
+        width: 100%;
+        border-radius: var(--radius-md);
+    }
+    
+    .session-btn {
+        flex-grow: 1;
+        border-radius: var(--radius-md);
+        text-align: center;
+    }
+}
+
 .hidden {
     display: none !important;
 }

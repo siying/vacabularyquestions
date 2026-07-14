@@ -35,6 +35,16 @@
             </nav>
         </header>
 
+        <!-- Global Session Selector -->
+        <div class="global-session-selector">
+            <span class="session-label">📅 Study Session:</span>
+            <div class="session-toggle">
+                <button class="session-btn active" id="session-btn-day2" onclick="switchSession('day2')">Day 2 (Latest)</button>
+                <button class="session-btn" id="session-btn-day1" onclick="switchSession('day1')">Day 1</button>
+                <button class="session-btn" id="session-btn-overall" onclick="switchSession('overall')">Overall Review</button>
+            </div>
+        </div>
+
         <!-- Main Content Area -->
         <main class="main-content">
             <!-- Study Tab -->
@@ -44,9 +54,9 @@
                     <p>Review the definitions, synonyms, and example sentences for the words you missed or struggled with.</p>
                 </div>
                 <div class="deck-controls">
-                    <button class="control-btn active" id="filter-all" onclick="filterStudyDeck('all')">All Words (13)</button>
-                    <button class="control-btn" id="filter-errors" onclick="filterStudyDeck('errors')">Flat-Out Errors (8)</button>
-                    <button class="control-btn" id="filter-struggles" onclick="filterStudyDeck('struggles')">Struggled/Corrected (5)</button>
+                    <button class="control-btn active" id="filter-all" onclick="filterStudyDeck('all')">All Words</button>
+                    <button class="control-btn" id="filter-errors" onclick="filterStudyDeck('errors')">Flat-Out Errors</button>
+                    <button class="control-btn" id="filter-struggles" onclick="filterStudyDeck('struggles')">Struggled/Corrected</button>
                 </div>
                 <div class="words-grid" id="words-grid">
                     <!-- Cards will be dynamically inserted here -->
