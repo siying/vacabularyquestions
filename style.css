@@ -306,6 +306,25 @@ body {
 
 .card-front {
     justify-content: space-between;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    overflow-y: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.word-card.flipped .card-front {
+    z-index: 1;
+    pointer-events: none;
+}
+
+.word-card.flipped .card-back {
+    z-index: 2;
+    pointer-events: auto;
 }
 
 /* Tag style (Flat-out error vs Struggle) */
@@ -369,10 +388,6 @@ body {
 }
 
 /* Card Back Styles */
-.card-back {
-    transform: rotateY(180deg);
-    overflow-y: auto;
-}
 
 .card-back::-webkit-scrollbar {
     width: 6px;
