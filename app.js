@@ -757,15 +757,14 @@ const sentenceQuestions = [
         explanation: "Being hopeful and confident about a comeback is being <strong>optimistic</strong>."
     },
 
-    // ==================== DAY 3 QUESTIONS ====================
     // INFERIOR (Error word — 3 questions)
     {
-        sentence: "Even though Sam believed his laptop's features were <span class='sentence-blank'>_______</span> to those of his classmates, he didn't think their laptops were worth the cost.",
-        options: ["similar", "superior", "inferior", "compatible"],
+        sentence: "The cheap knock-off of the phone had a/an <span class='sentence-blank'>_______</span> screen that scratched very easily compared to the original.",
+        options: ["identical", "superior", "inferior", "convenient"],
         correctIndex: 2,
         word: "INFERIOR",
         day: 3,
-        explanation: "'Even though' signals contrast — if the features were <strong>inferior</strong> (worse), you'd expect him to want theirs, but he doesn't think they're worth the cost."
+        explanation: "A screen of lower quality that scratches easily is <strong>inferior</strong>."
     },
     {
         sentence: "The off-brand cereal tasted <span class='sentence-blank'>_______</span> to the name brand, so the family went back to buying the original.",
@@ -786,12 +785,12 @@ const sentenceQuestions = [
 
     // FEEBLE (Error word — 3 questions)
     {
-        sentence: "After her hip surgery, Cindy's grandmother remained <span class='sentence-blank'>_______</span> despite the doctor clearing her to go home.",
-        options: ["painful", "feeble", "portable", "attentive"],
+        sentence: "The kitten was so small and <span class='sentence-blank'>_______</span> that it could barely lift its head to drink the milk.",
+        options: ["playful", "feeble", "robust", "temporary"],
         correctIndex: 1,
         word: "FEEBLE",
         day: 3,
-        explanation: "Being physically weak after surgery means she remained <strong>feeble</strong> — lacking strength, not just in pain."
+        explanation: "Lacking physical strength or being very weak makes the kitten <strong>feeble</strong>."
     },
     {
         sentence: "The old dog's <span class='sentence-blank'>_______</span> legs could barely carry him across the yard anymore.",
@@ -812,12 +811,12 @@ const sentenceQuestions = [
 
     // MORALS (Error word — 3 questions)
     {
-        sentence: "Catie refused to sneak out with her friends because it was against her <span class='sentence-blank'>_______</span>.",
-        options: ["grades", "morals", "schedule", "ambitions"],
+        sentence: "Cheating on the test was a direct violation of his personal <span class='sentence-blank'>_______</span>, so he decided to study honestly instead.",
+        options: ["desires", "morals", "habits", "success"],
         correctIndex: 1,
         word: "MORALS",
         day: 3,
-        explanation: "Refusing to do something because you believe it's wrong means it goes against your <strong>morals</strong> — your ethical principles."
+        explanation: "A person's standards and beliefs about what is right and wrong are their <strong>morals</strong>."
     },
     {
         sentence: "The teacher used the fairy tale to teach the children a lesson about <span class='sentence-blank'>_______</span> and knowing right from wrong.",
@@ -837,12 +836,12 @@ const sentenceQuestions = [
     },
     // REINFORCEMENT (Struggle word — 2 questions)
     {
-        sentence: "It is difficult to change children's behavior without continuous <span class='sentence-blank'>_______</span>.",
-        options: ["anger", "reinforcement", "obedience", "meditation"],
+        sentence: "Training a puppy requires positive <span class='sentence-blank'>_______</span> like treats and praise whenever they obey a command.",
+        options: ["punishment", "reinforcement", "attention", "patience"],
         correctIndex: 1,
         word: "REINFORCEMENT",
         day: 3,
-        explanation: "Changing behavior requires consistent encouragement and strengthening, which is <strong>reinforcement</strong>."
+        explanation: "Strengthening behavior through rewards is positive <strong>reinforcement</strong>."
     },
     {
         sentence: "The coach believed that positive <span class='sentence-blank'>_______</span> was more effective than punishment for motivating players.",
