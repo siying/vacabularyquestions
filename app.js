@@ -238,16 +238,6 @@ const vocabularyData = [
         pitfall: "Don't confuse <strong>morals</strong> with <strong>desires</strong> or <strong>intentions</strong>. Desires are what you want; intentions are what you plan to do. Morals are your ethical principles about right and wrong."
     },
     {
-        word: "PRIORITY",
-        pos: "noun",
-        definition: "Something that is regarded as more important than other things; something that must be dealt with first.",
-        synonyms: ["precedence", "importance", "preference", "urgency"],
-        example: "Although Sara wanted to go to the movies, studying for her exam took priority over her social life.",
-        type: "struggle",
-        day: 3,
-        pitfall: "Don't confuse <strong>priority</strong> with <strong>enjoyment</strong> or <strong>domination</strong>. Priority means something that comes first in importance — it's about ranking, not about pleasure or control."
-    },
-    {
         word: "REINFORCEMENT",
         pos: "noun",
         definition: "The process of encouraging or strengthening a behavior, idea, or pattern.",
@@ -256,46 +246,6 @@ const vocabularyData = [
         type: "struggle",
         day: 3,
         pitfall: "Don't confuse <strong>reinforcement</strong> with <strong>obedience</strong> or <strong>anger</strong>. Obedience is following rules; anger is emotion. Reinforcement is a process of strengthening or encouraging a behavior over time."
-    },
-    {
-        word: "GRACEFUL",
-        pos: "adjective",
-        definition: "Having or showing grace or elegance in movement, form, or proportion.",
-        synonyms: ["elegant", "poised", "fluid", "refined"],
-        example: "All the dancers envied Sasha's ability to remain graceful throughout the entire audition.",
-        type: "struggle",
-        day: 3,
-        pitfall: "Don't confuse <strong>graceful</strong> with <strong>motionless</strong> or <strong>eccentric</strong>. Motionless means not moving; eccentric means unusual. Graceful specifically means elegant and smooth in movement."
-    },
-    {
-        word: "VIOLATE",
-        pos: "verb",
-        definition: "To break or fail to comply with a rule, law, or formal agreement.",
-        synonyms: ["break", "breach", "infringe", "transgress"],
-        example: "Though hungry and without money, she refused to violate the law by stealing bread.",
-        type: "struggle",
-        day: 3,
-        pitfall: "Don't confuse <strong>violate</strong> with <strong>follow</strong> or <strong>mock</strong>. Follow means to obey; mock means to ridicule. Violate means to break or go against a rule or law."
-    },
-    {
-        word: "GOVERN",
-        pos: "verb",
-        definition: "To conduct the policy, actions, and affairs of a state, organization, or community; to rule or control.",
-        synonyms: ["rule", "control", "administer", "lead"],
-        example: "One leader was selected to govern the community and enforce the laws.",
-        type: "struggle",
-        day: 3,
-        pitfall: "Don't confuse <strong>govern</strong> with <strong>respect</strong> or <strong>encourage</strong>. Respect means to admire; encourage means to support. Govern means to officially rule and make decisions for a group."
-    },
-    {
-        word: "DIVERSITY",
-        pos: "noun",
-        definition: "The state of being diverse; a range of different things; variety.",
-        synonyms: ["variety", "range", "assortment", "multiplicity"],
-        example: "The many types of animals in Africa demonstrate the extraordinary diversity of wildlife.",
-        type: "struggle",
-        day: 3,
-        pitfall: "Don't confuse <strong>diversity</strong> with <strong>beauty</strong> or <strong>habitats</strong>. Beauty is attractiveness; habitats are where animals live. Diversity means a wide variety or range of different types."
     }
 ];
 
@@ -885,25 +835,6 @@ const sentenceQuestions = [
         day: 3,
         explanation: "Doing the right thing even when no one is watching is guided by your <strong>morals</strong>."
     },
-
-    // PRIORITY (Struggle word — 2 questions)
-    {
-        sentence: "Although Sara wanted to go to the movies, studying for her exam took <span class='sentence-blank'>_______</span> over her social life.",
-        options: ["enjoyment", "priority", "domination", "diversity"],
-        correctIndex: 1,
-        word: "PRIORITY",
-        day: 3,
-        explanation: "When something is more important and must come first, it takes <strong>priority</strong> over other things."
-    },
-    {
-        sentence: "The principal announced that student safety was the school's top <span class='sentence-blank'>_______</span>.",
-        options: ["priority", "reinforcement", "assumption", "compliment"],
-        correctIndex: 0,
-        word: "PRIORITY",
-        day: 3,
-        explanation: "The most important concern or thing that comes first is the top <strong>priority</strong>."
-    },
-
     // REINFORCEMENT (Struggle word — 2 questions)
     {
         sentence: "It is difficult to change children's behavior without continuous <span class='sentence-blank'>_______</span>.",
@@ -920,78 +851,6 @@ const sentenceQuestions = [
         word: "REINFORCEMENT",
         day: 3,
         explanation: "Encouraging good behavior through praise and rewards is positive <strong>reinforcement</strong>."
-    },
-
-    // GRACEFUL (Struggle word — 2 questions)
-    {
-        sentence: "All the dancers envied Sasha's ability to remain <span class='sentence-blank'>_______</span> throughout the entire audition.",
-        options: ["motionless", "eccentric", "clumsy", "graceful"],
-        correctIndex: 3,
-        word: "GRACEFUL",
-        day: 3,
-        explanation: "Moving with elegance and poise during a dance audition means being <strong>graceful</strong>."
-    },
-    {
-        sentence: "The swan glided across the lake in a <span class='sentence-blank'>_______</span> motion that captivated everyone watching.",
-        options: ["feeble", "graceful", "tedious", "bizarre"],
-        correctIndex: 1,
-        word: "GRACEFUL",
-        day: 3,
-        explanation: "A smooth, elegant gliding motion is <strong>graceful</strong>."
-    },
-
-    // VIOLATE (Struggle word — 2 questions)
-    {
-        sentence: "Though hungry and without money, she refused to <span class='sentence-blank'>_______</span> the law by stealing bread.",
-        options: ["follow", "question", "violate", "mock"],
-        correctIndex: 2,
-        word: "VIOLATE",
-        day: 3,
-        explanation: "Breaking the law by stealing would be to <strong>violate</strong> the law."
-    },
-    {
-        sentence: "Students who <span class='sentence-blank'>_______</span> the dress code will be sent home to change.",
-        options: ["emulate", "violate", "endure", "resemble"],
-        correctIndex: 1,
-        word: "VIOLATE",
-        day: 3,
-        explanation: "Breaking or failing to comply with the dress code rules is to <strong>violate</strong> them."
-    },
-
-    // GOVERN (Struggle word — 2 questions)
-    {
-        sentence: "One leader was selected to <span class='sentence-blank'>_______</span> the community and enforce the laws.",
-        options: ["respect", "encourage", "govern", "save"],
-        correctIndex: 2,
-        word: "GOVERN",
-        day: 3,
-        explanation: "Being selected to lead and enforce laws means being chosen to <strong>govern</strong>."
-    },
-    {
-        sentence: "The newly elected mayor promised to <span class='sentence-blank'>_______</span> the city with fairness and transparency.",
-        options: ["abandon", "govern", "provoke", "contract"],
-        correctIndex: 1,
-        word: "GOVERN",
-        day: 3,
-        explanation: "Leading and managing a city's affairs is to <strong>govern</strong> it."
-    },
-
-    // DIVERSITY (Struggle word — 2 questions)
-    {
-        sentence: "The many types of animals in Africa demonstrate the extraordinary <span class='sentence-blank'>_______</span> of wildlife.",
-        options: ["beauty", "dangers", "diversity", "habitats"],
-        correctIndex: 2,
-        word: "DIVERSITY",
-        day: 3,
-        explanation: "Many different types of animals shows a wide <strong>diversity</strong> — variety and range."
-    },
-    {
-        sentence: "The school celebrated the cultural <span class='sentence-blank'>_______</span> of its students with an international food festival.",
-        options: ["priority", "diversity", "reinforcement", "sympathy"],
-        correctIndex: 1,
-        word: "DIVERSITY",
-        day: 3,
-        explanation: "A wide range of different cultures represented is cultural <strong>diversity</strong>."
     }
 ];
 
