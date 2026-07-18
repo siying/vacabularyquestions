@@ -246,6 +246,98 @@ const vocabularyData = [
         type: "struggle",
         day: 3,
         pitfall: "Don't confuse <strong>reinforcement</strong> with <strong>obedience</strong> or <strong>anger</strong>. Obedience is following rules; anger is emotion. Reinforcement is a process of strengthening or encouraging a behavior over time."
+    },
+
+    // Day 4 Words
+    {
+        word: "BLATANT",
+        pos: "adjective",
+        definition: "Done openly and unashamedly; completely obvious and glaring.",
+        synonyms: ["obvious", "flagrant", "glaring", "overt"],
+        example: "His blatant lie was easy to spot because everyone knew the truth.",
+        type: "error",
+        day: 4,
+        pitfall: "Don't confuse <strong>blatant</strong> with <strong>intentional</strong> or <strong>offensive</strong>. Intentional means done on purpose; blatant specifically means extremely obvious and undisguised."
+    },
+    {
+        word: "IMPULSIVE",
+        pos: "adjective",
+        definition: "Acting or done quickly without thought or care for the consequences.",
+        synonyms: ["spontaneous", "hasty", "rash", "reckless"],
+        example: "Without thinking, he made an impulsive decision to buy the expensive gadget.",
+        type: "error",
+        day: 4,
+        pitfall: "Don't confuse <strong>impulsive</strong> with <strong>aggressive</strong> or <strong>foolish</strong>. Aggressive means hostile; impulsive means acting suddenly on instinct without planning ahead."
+    },
+    {
+        word: "ATROCIOUS",
+        pos: "adjective",
+        definition: "Extremely bad, unpleasant, or shocking; horrifyingly wicked.",
+        synonyms: ["horrible", "dreadful", "terrible", "awful"],
+        example: "The weather during their camping trip was atrocious, with nonstop freezing rain.",
+        type: "error",
+        day: 4,
+        pitfall: "Don't confuse <strong>atrocious</strong> with <strong>amazing</strong>! Amazing means wonderful, while atrocious is the complete opposite — meaning terrible or dreadful."
+    },
+    {
+        word: "ABSURD",
+        pos: "adjective",
+        definition: "Wildly unreasonable, illogical, or inappropriate; completely ridiculous.",
+        synonyms: ["ridiculous", "preposterous", "foolish", "senseless"],
+        example: "The idea that pigs could fly was completely absurd to everyone.",
+        type: "error",
+        day: 4,
+        pitfall: "Don't confuse <strong>absurd</strong> with <strong>loud</strong> or <strong>confident</strong>. Loud refers to sound; absurd means silly, ridiculous, and lacking logic."
+    },
+    {
+        word: "PEDESTRIAN",
+        pos: "adjective",
+        definition: "Lacking inspiration, excitement, or imagination; dull and ordinary.",
+        synonyms: ["commonplace", "ordinary", "dull", "uninspired"],
+        example: "The critic described the movie's plot as pedestrian and predictable.",
+        type: "error",
+        day: 4,
+        pitfall: "Don't confuse <strong>pedestrian</strong> with <strong>professional</strong> or <strong>unusual</strong>. When used as an adjective, pedestrian means plain, ordinary, and commonplace."
+    },
+    {
+        word: "JUVENILE",
+        pos: "adjective",
+        definition: "Relating to young people; childish or immature in behavior.",
+        synonyms: ["youthful", "childish", "young", "immature"],
+        example: "His juvenile jokes made his older sister roll her eyes in annoyance.",
+        type: "error",
+        day: 4,
+        pitfall: "Don't confuse <strong>juvenile</strong> with <strong>criminal</strong> or <strong>mature</strong>. Juvenile simply means youthful or characteristic of young people."
+    },
+    {
+        word: "IMMENSE",
+        pos: "adjective",
+        definition: "Extremely large or great, especially in scale, size, or degree.",
+        synonyms: ["huge", "massive", "enormous", "gigantic"],
+        example: "The castle stood on top of an immense mountain overlooking the entire valley.",
+        type: "error",
+        day: 4,
+        pitfall: "Don't confuse <strong>immense</strong> with <strong>unbearable</strong> or <strong>intense</strong>. Immense specifically refers to giant size or huge scale."
+    },
+    {
+        word: "JUBILEE",
+        pos: "noun",
+        definition: "A special anniversary of an event, especially one celebrating a major milestone.",
+        synonyms: ["celebration", "anniversary", "festival", "gala"],
+        example: "The city held a grand jubilee to celebrate its 100th year of founding.",
+        type: "error",
+        day: 4,
+        pitfall: "Don't confuse <strong>jubilee</strong> with <strong>invitation</strong> or <strong>expectation</strong>. A jubilee is the joyful celebration or special anniversary event itself."
+    },
+    {
+        word: "SUBJECTIVE",
+        pos: "adjective",
+        definition: "Based on or influenced by personal feelings, tastes, or opinions rather than facts.",
+        synonyms: ["biased", "personal", "individual", "partial"],
+        example: "Art appreciation is completely subjective; what one person loves, another might dislike.",
+        type: "struggle",
+        day: 4,
+        pitfall: "Don't confuse <strong>subjective</strong> with <strong>neutral</strong> or <strong>disinterested</strong>. Objective means neutral/unbiased; subjective means based on personal feelings and opinions (biased)."
     }
 ];
 
@@ -850,6 +942,169 @@ const sentenceQuestions = [
         word: "REINFORCEMENT",
         day: 3,
         explanation: "Encouraging good behavior through praise and rewards is positive <strong>reinforcement</strong>."
+    },
+
+    // ==================== DAY 4 QUESTIONS ====================
+    // BLATANT
+    {
+        sentence: "The student's <span class='sentence-blank'>_______</span> attempt to copy his neighbor's paper was noticed immediately by the teacher.",
+        options: ["timid", "blatant", "subtle", "portable"],
+        correctIndex: 1,
+        word: "BLATANT",
+        day: 4,
+        explanation: "An attempt that is completely obvious and unashamed is a <strong>blatant</strong> attempt."
+    },
+    {
+        sentence: "It was a <span class='sentence-blank'>_______</span> disregard of the rules when he walked right past the 'Do Not Enter' sign.",
+        options: ["blatant", "cautious", "feeble", "friendly"],
+        correctIndex: 0,
+        word: "BLATANT",
+        day: 4,
+        explanation: "Openly and glaringly ignoring rules is a <strong>blatant</strong> disregard."
+    },
+
+    // IMPULSIVE
+    {
+        sentence: "Known for being <span class='sentence-blank'>_______</span>, she bought the expensive pair of shoes on a whim without checking her budget.",
+        options: ["patient", "impulsive", "optimistic", "attentive"],
+        correctIndex: 1,
+        word: "IMPULSIVE",
+        day: 4,
+        explanation: "Acting quickly on instinct without thinking or planning ahead is being <strong>impulsive</strong>."
+    },
+    {
+        sentence: "Taking a deep breath before answering can help prevent making <span class='sentence-blank'>_______</span> remarks when you are upset.",
+        options: ["deliberate", "impulsive", "graceful", "creative"],
+        correctIndex: 1,
+        word: "IMPULSIVE",
+        day: 4,
+        explanation: "Hasty remarks made without carefully thinking first are <strong>impulsive</strong>."
+    },
+
+    // ATROCIOUS
+    {
+        sentence: "The chef's attempt at making sushi was so <span class='sentence-blank'>_______</span> that no one at the table could finish a single bite.",
+        options: ["astonishing", "atrocious", "delicious", "inventive"],
+        correctIndex: 1,
+        word: "ATROCIOUS",
+        day: 4,
+        explanation: "Something that tastes extremely bad or terrible is <strong>atrocious</strong>."
+    },
+    {
+        sentence: "Traffic was <span class='sentence-blank'>_______</span> on the highway due to the heavy snowstorm, delaying commuters for hours.",
+        options: ["atrocious", "meager", "orderly", "temporary"],
+        correctIndex: 0,
+        word: "ATROCIOUS",
+        day: 4,
+        explanation: "Extremely bad or terrible traffic conditions are <strong>atrocious</strong>."
+    },
+
+    // ABSURD
+    {
+        sentence: "Expecting a goldfish to ride a bicycle is completely <span class='sentence-blank'>_______</span> and makes no sense.",
+        options: ["absurd", "practical", "reasonable", "attentive"],
+        correctIndex: 0,
+        word: "ABSURD",
+        day: 4,
+        explanation: "Something that is wildly unreasonable or illogical is <strong>absurd</strong>."
+    },
+    {
+        sentence: "The price tag of one thousand dollars for a basic plain shirt seemed utterly <span class='sentence-blank'>_______</span> to the shoppers.",
+        options: ["modest", "absurd", "fair", "inferior"],
+        correctIndex: 1,
+        word: "ABSURD",
+        day: 4,
+        explanation: "An unreasonably high price that makes no sense is <strong>absurd</strong>."
+    },
+
+    // PEDESTRIAN
+    {
+        sentence: "The novel's storyline was so <span class='sentence-blank'>_______</span> and uninspiring that he fell asleep after reading just two chapters.",
+        options: ["thrilling", "pedestrian", "creative", "optimistic"],
+        correctIndex: 1,
+        word: "PEDESTRIAN",
+        day: 4,
+        explanation: "A plot that lacks excitement and is dull or ordinary is <strong>pedestrian</strong>."
+    },
+    {
+        sentence: "Rather than an extraordinary masterpiece, the art critic dismissed the painting as ordinary and <span class='sentence-blank'>_______</span>.",
+        options: ["pedestrian", "unique", "immense", "atrocious"],
+        correctIndex: 0,
+        word: "PEDESTRIAN",
+        day: 4,
+        explanation: "Lacking imagination or special qualities means being dull and <strong>pedestrian</strong>."
+    },
+
+    // JUVENILE
+    {
+        sentence: "Making silly faces and calling names during a serious meeting is very <span class='sentence-blank'>_______</span> behavior for an adult.",
+        options: ["mature", "juvenile", "polite", "attentive"],
+        correctIndex: 1,
+        word: "JUVENILE",
+        day: 4,
+        explanation: "Childish or immature behavior from an adult is described as <strong>juvenile</strong>."
+    },
+    {
+        sentence: "The summer camp offered many fun activities designed specifically for <span class='sentence-blank'>_______</span> campers.",
+        options: ["juvenile", "elderly", "austere", "timid"],
+        correctIndex: 0,
+        word: "JUVENILE",
+        day: 4,
+        explanation: "Relating to youth or young people means <strong>juvenile</strong>."
+    },
+
+    // IMMENSE
+    {
+        sentence: "The blue whale is an animal of <span class='sentence-blank'>_______</span> proportions, weighing over one hundred tons.",
+        options: ["meager", "immense", "tiny", "feeble"],
+        correctIndex: 1,
+        word: "IMMENSE",
+        day: 4,
+        explanation: "Extremely large or huge in size is <strong>immense</strong>."
+    },
+    {
+        sentence: "She felt <span class='sentence-blank'>_______</span> relief when the doctor confirmed that her test results were completely clear.",
+        options: ["immense", "trivial", "slight", "irritated"],
+        correctIndex: 0,
+        word: "IMMENSE",
+        day: 4,
+        explanation: "Extremely great or enormous relief is <strong>immense</strong>."
+    },
+
+    // JUBILEE
+    {
+        sentence: "Thousands of people gathered in the town square to celebrate the king's golden <span class='sentence-blank'>_______</span>.",
+        options: ["tragedy", "jubilee", "struggle", "auction"],
+        correctIndex: 1,
+        word: "JUBILEE",
+        day: 4,
+        explanation: "A special anniversary milestone celebration is a <strong>jubilee</strong>."
+    },
+    {
+        sentence: "The neighborhood hosted a summer <span class='sentence-blank'>_______</span> filled with music, food, and fireworks for all the residents.",
+        options: ["jubilee", "exile", "funerary", "despair"],
+        correctIndex: 0,
+        word: "JUBILEE",
+        day: 4,
+        explanation: "A festive occasion or joyful anniversary celebration is a <strong>jubilee</strong>."
+    },
+
+    // SUBJECTIVE
+    {
+        sentence: "Whether chocolate or vanilla is the better flavor is entirely <span class='sentence-blank'>_______</span>, as it depends on personal preference.",
+        options: ["factual", "subjective", "universal", "indifferent"],
+        correctIndex: 1,
+        word: "SUBJECTIVE",
+        day: 4,
+        explanation: "Based on personal tastes and feelings rather than objective facts is <strong>subjective</strong>."
+    },
+    {
+        sentence: "A judge must strive to remain neutral, avoiding <span class='sentence-blank'>_______</span> opinions when reviewing evidence in court.",
+        options: ["subjective", "objective", "unbiased", "attentive"],
+        correctIndex: 0,
+        word: "SUBJECTIVE",
+        day: 4,
+        explanation: "Opinions based on personal feelings rather than facts are <strong>subjective</strong>."
     }
 ];
 
@@ -885,6 +1140,8 @@ function getFilteredSessionWords() {
         return vocabularyData.filter(w => w.day === 2);
     } else if (currentSession === "day3") {
         return vocabularyData.filter(w => w.day === 3);
+    } else if (currentSession === "day4") {
+        return vocabularyData.filter(w => w.day === 4);
     }
     return [...vocabularyData];
 }
@@ -898,6 +1155,8 @@ function getFilteredSessionSentences() {
         return sentenceQuestions.filter(q => q.day === 2);
     } else if (currentSession === "day3") {
         return sentenceQuestions.filter(q => q.day === 3);
+    } else if (currentSession === "day4") {
+        return sentenceQuestions.filter(q => q.day === 4);
     }
     return [...sentenceQuestions];
 }
@@ -906,7 +1165,7 @@ function getFilteredSessionSentences() {
 // INITIALIZATION
 // ==========================================================================
 document.addEventListener("DOMContentLoaded", () => {
-    switchSession("day3");
+    switchSession("day4");
 });
 
 // ==========================================================================
@@ -1063,7 +1322,7 @@ function startQuiz() {
     
     // Prepare questions (Shuffle filtered session words)
     const sessionWords = getFilteredSessionWords();
-    const quizLength = currentSession === "day3" ? 9 : (currentSession === "day2" ? 7 : (currentSession === "day1" ? 10 : 15));
+    const quizLength = currentSession === "day4" ? 9 : (currentSession === "day3" ? 4 : (currentSession === "day2" ? 7 : (currentSession === "day1" ? 10 : 15)));
     
     quizQuestions = shuffleArray([...sessionWords]).slice(0, quizLength);
     currentQuizIndex = 0;
